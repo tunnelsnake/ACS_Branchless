@@ -88,6 +88,22 @@ public:
     }
   }
 
+  void mapInPlace(T& (*func)(T &)) {
+    for (auto row : *_table) {
+      for (auto col : row) {
+        func(col);
+      }
+    }
+  }
+
+  void mapInPlace2(T& (*func)(T &)) {
+    for (int i = 0; i < _height; i++) {
+      for (int j = 0; j < _width; j++) {
+        func(_table->at(i).at(j));
+      }
+    }
+  }
+
   // This function will let us map over every row of the data table and
   // run a function on them.
   void mapRows(std::vector<bool> (*func)(std::vector<T> &)) {
