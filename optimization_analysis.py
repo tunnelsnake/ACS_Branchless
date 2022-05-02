@@ -70,4 +70,5 @@ if __name__ == "__main__":
     get_diff("optimization_flags", "O0_trimmed.txt")
 
     results = get_results()
+    results.plot.bar()
     print(results[["branching", "no_branching"]].mean())

@@ -80,8 +80,8 @@ g++ -g basic_comp.cpp -fipa-reference
 objdump -l -d a.out > fipa-reference_line.txt
 ./a.out
 
-echo -e "\n-fmerge-constant"
-g++ -g basic_comp.cpp -fmerge-constant
+echo -e "\n-fmerge-constants"
+g++ -g basic_comp.cpp -fmerge-constants
 objdump -l -d a.out > fmerge-constant_line.txt
 ./a.out
 
@@ -100,9 +100,9 @@ g++ -g basic_comp.cpp -ftree-ch
 objdump -l -d a.out > ftree-ch_line.txt
 ./a.out
 
-echo -e "\n-ftree-copyrename"
-g++ -g basic_comp.cpp -ftree-copyrename
-objdump -l -d a.out > ftree-copyrename_line.txt
+echo -e "\n-ftree-copy-prop"
+g++ -g basic_comp.cpp -ftree-copy-prop
+objdump -l -d a.out > ftree-copy-prop_line.txt
 ./a.out
 
 echo -e "\n-ftree-dce"
@@ -135,7 +135,7 @@ g++ -g basic_comp.cpp -ftree-ter
 objdump -l -d a.out > ftree-ter_line.txt
 ./a.out
 
-echo -e "\n-funit-at-a-tim"
+echo -e "\n-funit-at-a-time"
 g++ -g basic_comp.cpp -funit-at-a-time
 objdump -l -d a.out > funit-at-a-tim_line.txt
 ./a.out
