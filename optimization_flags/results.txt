@@ -1,0 +1,198 @@
+
+-O0
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19983ms
+Worse   : 946ms
+Better  : 954ms
+
+-O1
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19836ms
+Worse   : 590ms
+Better  : 481ms
+
+-O2
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 83862ms
+Worse   : 384ms
+Better  : 404ms
+
+-O3
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19711ms
+Worse   : 208ms
+Better  : 224ms
+
+-fauto-inc-dec
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 20937ms
+Worse   : 1166ms
+Better  : 1134ms
+
+-fcprop-registers
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 22804ms
+Worse   : 1068ms
+Better  : 1122ms
+
+-fdce
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 22946ms
+Worse   : 1188ms
+Better  : 1138ms
+
+-fdefer-pop
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19893ms
+Worse   : 961ms
+Better  : 952ms
+
+-fdelayed-branch
+cc1plus: warning: this target machine does not have delayed branches
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19795ms
+Worse   : 954ms
+Better  : 954ms
+
+-fdse
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18756ms
+Worse   : 948ms
+Better  : 947ms
+
+-fguess-branch-probability
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19270ms
+Worse   : 951ms
+Better  : 947ms
+
+-fif-conversion2
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 20365ms
+Worse   : 947ms
+Better  : 946ms
+
+-fif-conversion
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 20295ms
+Worse   : 955ms
+Better  : 951ms
+
+-finline-small-functions
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19138ms
+Worse   : 949ms
+Better  : 947ms
+
+-fipa-pure-const
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 20210ms
+Worse   : 960ms
+Better  : 948ms
+
+-fipa-reference
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18769ms
+Worse   : 947ms
+Better  : 953ms
+
+-fmerge-constant
+g++: error: unrecognized command-line option ‘-fmerge-constant’; did you mean ‘-fmerge-constants’?
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18275ms
+Worse   : 945ms
+Better  : 945ms
+
+-fsplit-wide-types
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 17938ms
+Worse   : 965ms
+Better  : 947ms
+
+-ftree-ccp
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18274ms
+Worse   : 946ms
+Better  : 943ms
+
+-ftree-ch
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 19176ms
+Worse   : 940ms
+Better  : 941ms
+
+-ftree-copyrename
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18072ms
+Worse   : 942ms
+Better  : 940ms
+
+-ftree-dce
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 17715ms
+Worse   : 940ms
+Better  : 942ms
+
+-ftree-dominator-opts
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18524ms
+Worse   : 940ms
+Better  : 940ms
+
+-ftree-dse
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18086ms
+Worse   : 941ms
+Better  : 940ms
+
+-ftree-fre
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18359ms
+Worse   : 939ms
+Better  : 939ms
+
+-ftree-sra
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 17772ms
+Worse   : 940ms
+Better  : 940ms
+
+-ftree-ter
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 17758ms
+Worse   : 905ms
+Better  : 880ms
+
+-funit-at-a-tim
+Loading from CSV ui_5000_5000.csv
+rows: 5000 columns: 5000
+Loading : 18140ms
+Worse   : 940ms
+Better  : 939ms

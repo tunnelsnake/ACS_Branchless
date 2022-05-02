@@ -89,7 +89,7 @@ public:
   }
 
   void mapInPlace(T& (*func)(T &)) {
-    for (auto row : *_table) {
+    for (auto row : *table) {
       for (auto col : row) {
         func(col);
       }
@@ -99,7 +99,7 @@ public:
   void mapInPlace2(T& (*func)(T &)) {
     for (int i = 0; i < _height; i++) {
       for (int j = 0; j < _width; j++) {
-        func(_table->at(i).at(j));
+        func(table->at(i).at(j));
       }
     }
   }

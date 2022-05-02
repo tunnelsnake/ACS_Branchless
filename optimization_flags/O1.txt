@@ -1,0 +1,2180 @@
+
+a.out:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000002000 <_init>:
+    2000:	f3 0f 1e fa          	endbr64 
+    2004:	48 83 ec 08          	sub    $0x8,%rsp
+    2008:	48 8b 05 c1 4f 00 00 	mov    0x4fc1(%rip),%rax        # 6fd0 <__gmon_start__>
+    200f:	48 85 c0             	test   %rax,%rax
+    2012:	74 02                	je     2016 <_init+0x16>
+    2014:	ff d0                	callq  *%rax
+    2016:	48 83 c4 08          	add    $0x8,%rsp
+    201a:	c3                   	retq   
+
+Disassembly of section .plt:
+
+0000000000002020 <.plt>:
+    2020:	ff 35 2a 4e 00 00    	pushq  0x4e2a(%rip)        # 6e50 <_GLOBAL_OFFSET_TABLE_+0x8>
+    2026:	f2 ff 25 2b 4e 00 00 	bnd jmpq *0x4e2b(%rip)        # 6e58 <_GLOBAL_OFFSET_TABLE_+0x10>
+    202d:	0f 1f 00             	nopl   (%rax)
+    2030:	f3 0f 1e fa          	endbr64 
+    2034:	68 00 00 00 00       	pushq  $0x0
+    2039:	f2 e9 e1 ff ff ff    	bnd jmpq 2020 <.plt>
+    203f:	90                   	nop
+    2040:	f3 0f 1e fa          	endbr64 
+    2044:	68 01 00 00 00       	pushq  $0x1
+    2049:	f2 e9 d1 ff ff ff    	bnd jmpq 2020 <.plt>
+    204f:	90                   	nop
+    2050:	f3 0f 1e fa          	endbr64 
+    2054:	68 02 00 00 00       	pushq  $0x2
+    2059:	f2 e9 c1 ff ff ff    	bnd jmpq 2020 <.plt>
+    205f:	90                   	nop
+    2060:	f3 0f 1e fa          	endbr64 
+    2064:	68 03 00 00 00       	pushq  $0x3
+    2069:	f2 e9 b1 ff ff ff    	bnd jmpq 2020 <.plt>
+    206f:	90                   	nop
+    2070:	f3 0f 1e fa          	endbr64 
+    2074:	68 04 00 00 00       	pushq  $0x4
+    2079:	f2 e9 a1 ff ff ff    	bnd jmpq 2020 <.plt>
+    207f:	90                   	nop
+    2080:	f3 0f 1e fa          	endbr64 
+    2084:	68 05 00 00 00       	pushq  $0x5
+    2089:	f2 e9 91 ff ff ff    	bnd jmpq 2020 <.plt>
+    208f:	90                   	nop
+    2090:	f3 0f 1e fa          	endbr64 
+    2094:	68 06 00 00 00       	pushq  $0x6
+    2099:	f2 e9 81 ff ff ff    	bnd jmpq 2020 <.plt>
+    209f:	90                   	nop
+    20a0:	f3 0f 1e fa          	endbr64 
+    20a4:	68 07 00 00 00       	pushq  $0x7
+    20a9:	f2 e9 71 ff ff ff    	bnd jmpq 2020 <.plt>
+    20af:	90                   	nop
+    20b0:	f3 0f 1e fa          	endbr64 
+    20b4:	68 08 00 00 00       	pushq  $0x8
+    20b9:	f2 e9 61 ff ff ff    	bnd jmpq 2020 <.plt>
+    20bf:	90                   	nop
+    20c0:	f3 0f 1e fa          	endbr64 
+    20c4:	68 09 00 00 00       	pushq  $0x9
+    20c9:	f2 e9 51 ff ff ff    	bnd jmpq 2020 <.plt>
+    20cf:	90                   	nop
+    20d0:	f3 0f 1e fa          	endbr64 
+    20d4:	68 0a 00 00 00       	pushq  $0xa
+    20d9:	f2 e9 41 ff ff ff    	bnd jmpq 2020 <.plt>
+    20df:	90                   	nop
+    20e0:	f3 0f 1e fa          	endbr64 
+    20e4:	68 0b 00 00 00       	pushq  $0xb
+    20e9:	f2 e9 31 ff ff ff    	bnd jmpq 2020 <.plt>
+    20ef:	90                   	nop
+    20f0:	f3 0f 1e fa          	endbr64 
+    20f4:	68 0c 00 00 00       	pushq  $0xc
+    20f9:	f2 e9 21 ff ff ff    	bnd jmpq 2020 <.plt>
+    20ff:	90                   	nop
+    2100:	f3 0f 1e fa          	endbr64 
+    2104:	68 0d 00 00 00       	pushq  $0xd
+    2109:	f2 e9 11 ff ff ff    	bnd jmpq 2020 <.plt>
+    210f:	90                   	nop
+    2110:	f3 0f 1e fa          	endbr64 
+    2114:	68 0e 00 00 00       	pushq  $0xe
+    2119:	f2 e9 01 ff ff ff    	bnd jmpq 2020 <.plt>
+    211f:	90                   	nop
+    2120:	f3 0f 1e fa          	endbr64 
+    2124:	68 0f 00 00 00       	pushq  $0xf
+    2129:	f2 e9 f1 fe ff ff    	bnd jmpq 2020 <.plt>
+    212f:	90                   	nop
+    2130:	f3 0f 1e fa          	endbr64 
+    2134:	68 10 00 00 00       	pushq  $0x10
+    2139:	f2 e9 e1 fe ff ff    	bnd jmpq 2020 <.plt>
+    213f:	90                   	nop
+    2140:	f3 0f 1e fa          	endbr64 
+    2144:	68 11 00 00 00       	pushq  $0x11
+    2149:	f2 e9 d1 fe ff ff    	bnd jmpq 2020 <.plt>
+    214f:	90                   	nop
+    2150:	f3 0f 1e fa          	endbr64 
+    2154:	68 12 00 00 00       	pushq  $0x12
+    2159:	f2 e9 c1 fe ff ff    	bnd jmpq 2020 <.plt>
+    215f:	90                   	nop
+    2160:	f3 0f 1e fa          	endbr64 
+    2164:	68 13 00 00 00       	pushq  $0x13
+    2169:	f2 e9 b1 fe ff ff    	bnd jmpq 2020 <.plt>
+    216f:	90                   	nop
+    2170:	f3 0f 1e fa          	endbr64 
+    2174:	68 14 00 00 00       	pushq  $0x14
+    2179:	f2 e9 a1 fe ff ff    	bnd jmpq 2020 <.plt>
+    217f:	90                   	nop
+    2180:	f3 0f 1e fa          	endbr64 
+    2184:	68 15 00 00 00       	pushq  $0x15
+    2189:	f2 e9 91 fe ff ff    	bnd jmpq 2020 <.plt>
+    218f:	90                   	nop
+    2190:	f3 0f 1e fa          	endbr64 
+    2194:	68 16 00 00 00       	pushq  $0x16
+    2199:	f2 e9 81 fe ff ff    	bnd jmpq 2020 <.plt>
+    219f:	90                   	nop
+    21a0:	f3 0f 1e fa          	endbr64 
+    21a4:	68 17 00 00 00       	pushq  $0x17
+    21a9:	f2 e9 71 fe ff ff    	bnd jmpq 2020 <.plt>
+    21af:	90                   	nop
+    21b0:	f3 0f 1e fa          	endbr64 
+    21b4:	68 18 00 00 00       	pushq  $0x18
+    21b9:	f2 e9 61 fe ff ff    	bnd jmpq 2020 <.plt>
+    21bf:	90                   	nop
+    21c0:	f3 0f 1e fa          	endbr64 
+    21c4:	68 19 00 00 00       	pushq  $0x19
+    21c9:	f2 e9 51 fe ff ff    	bnd jmpq 2020 <.plt>
+    21cf:	90                   	nop
+    21d0:	f3 0f 1e fa          	endbr64 
+    21d4:	68 1a 00 00 00       	pushq  $0x1a
+    21d9:	f2 e9 41 fe ff ff    	bnd jmpq 2020 <.plt>
+    21df:	90                   	nop
+    21e0:	f3 0f 1e fa          	endbr64 
+    21e4:	68 1b 00 00 00       	pushq  $0x1b
+    21e9:	f2 e9 31 fe ff ff    	bnd jmpq 2020 <.plt>
+    21ef:	90                   	nop
+    21f0:	f3 0f 1e fa          	endbr64 
+    21f4:	68 1c 00 00 00       	pushq  $0x1c
+    21f9:	f2 e9 21 fe ff ff    	bnd jmpq 2020 <.plt>
+    21ff:	90                   	nop
+    2200:	f3 0f 1e fa          	endbr64 
+    2204:	68 1d 00 00 00       	pushq  $0x1d
+    2209:	f2 e9 11 fe ff ff    	bnd jmpq 2020 <.plt>
+    220f:	90                   	nop
+    2210:	f3 0f 1e fa          	endbr64 
+    2214:	68 1e 00 00 00       	pushq  $0x1e
+    2219:	f2 e9 01 fe ff ff    	bnd jmpq 2020 <.plt>
+    221f:	90                   	nop
+    2220:	f3 0f 1e fa          	endbr64 
+    2224:	68 1f 00 00 00       	pushq  $0x1f
+    2229:	f2 e9 f1 fd ff ff    	bnd jmpq 2020 <.plt>
+    222f:	90                   	nop
+    2230:	f3 0f 1e fa          	endbr64 
+    2234:	68 20 00 00 00       	pushq  $0x20
+    2239:	f2 e9 e1 fd ff ff    	bnd jmpq 2020 <.plt>
+    223f:	90                   	nop
+    2240:	f3 0f 1e fa          	endbr64 
+    2244:	68 21 00 00 00       	pushq  $0x21
+    2249:	f2 e9 d1 fd ff ff    	bnd jmpq 2020 <.plt>
+    224f:	90                   	nop
+    2250:	f3 0f 1e fa          	endbr64 
+    2254:	68 22 00 00 00       	pushq  $0x22
+    2259:	f2 e9 c1 fd ff ff    	bnd jmpq 2020 <.plt>
+    225f:	90                   	nop
+    2260:	f3 0f 1e fa          	endbr64 
+    2264:	68 23 00 00 00       	pushq  $0x23
+    2269:	f2 e9 b1 fd ff ff    	bnd jmpq 2020 <.plt>
+    226f:	90                   	nop
+    2270:	f3 0f 1e fa          	endbr64 
+    2274:	68 24 00 00 00       	pushq  $0x24
+    2279:	f2 e9 a1 fd ff ff    	bnd jmpq 2020 <.plt>
+    227f:	90                   	nop
+    2280:	f3 0f 1e fa          	endbr64 
+    2284:	68 25 00 00 00       	pushq  $0x25
+    2289:	f2 e9 91 fd ff ff    	bnd jmpq 2020 <.plt>
+    228f:	90                   	nop
+    2290:	f3 0f 1e fa          	endbr64 
+    2294:	68 26 00 00 00       	pushq  $0x26
+    2299:	f2 e9 81 fd ff ff    	bnd jmpq 2020 <.plt>
+    229f:	90                   	nop
+    22a0:	f3 0f 1e fa          	endbr64 
+    22a4:	68 27 00 00 00       	pushq  $0x27
+    22a9:	f2 e9 71 fd ff ff    	bnd jmpq 2020 <.plt>
+    22af:	90                   	nop
+    22b0:	f3 0f 1e fa          	endbr64 
+    22b4:	68 28 00 00 00       	pushq  $0x28
+    22b9:	f2 e9 61 fd ff ff    	bnd jmpq 2020 <.plt>
+    22bf:	90                   	nop
+    22c0:	f3 0f 1e fa          	endbr64 
+    22c4:	68 29 00 00 00       	pushq  $0x29
+    22c9:	f2 e9 51 fd ff ff    	bnd jmpq 2020 <.plt>
+    22cf:	90                   	nop
+    22d0:	f3 0f 1e fa          	endbr64 
+    22d4:	68 2a 00 00 00       	pushq  $0x2a
+    22d9:	f2 e9 41 fd ff ff    	bnd jmpq 2020 <.plt>
+    22df:	90                   	nop
+
+Disassembly of section .plt.got:
+
+00000000000022e0 <__cxa_finalize@plt>:
+    22e0:	f3 0f 1e fa          	endbr64 
+    22e4:	f2 ff 25 cd 4c 00 00 	bnd jmpq *0x4ccd(%rip)        # 6fb8 <__cxa_finalize@GLIBC_2.2.5>
+    22eb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+Disassembly of section .plt.sec:
+
+00000000000022f0 <_ZNSo3putEc@plt>:
+    22f0:	f3 0f 1e fa          	endbr64 
+    22f4:	f2 ff 25 65 4b 00 00 	bnd jmpq *0x4b65(%rip)        # 6e60 <_ZNSo3putEc@GLIBCXX_3.4>
+    22fb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>:
+    2300:	f3 0f 1e fa          	endbr64 
+    2304:	f2 ff 25 5d 4b 00 00 	bnd jmpq *0x4b5d(%rip)        # 6e68 <_ZNSt6chrono3_V212system_clock3nowEv@GLIBCXX_3.4.19>
+    230b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002310 <_ZNSdD2Ev@plt>:
+    2310:	f3 0f 1e fa          	endbr64 
+    2314:	f2 ff 25 55 4b 00 00 	bnd jmpq *0x4b55(%rip)        # 6e70 <_ZNSdD2Ev@GLIBCXX_3.4>
+    231b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002320 <_ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv@plt>:
+    2320:	f3 0f 1e fa          	endbr64 
+    2324:	f2 ff 25 4d 4b 00 00 	bnd jmpq *0x4b4d(%rip)        # 6e78 <_ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv@GLIBCXX_3.4>
+    232b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002330 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev@plt>:
+    2330:	f3 0f 1e fa          	endbr64 
+    2334:	f2 ff 25 45 4b 00 00 	bnd jmpq *0x4b45(%rip)        # 6e80 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev@GLIBCXX_3.4>
+    233b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002340 <_ZNSt8ios_baseC2Ev@plt>:
+    2340:	f3 0f 1e fa          	endbr64 
+    2344:	f2 ff 25 3d 4b 00 00 	bnd jmpq *0x4b3d(%rip)        # 6e88 <_ZNSt8ios_baseC2Ev@GLIBCXX_3.4>
+    234b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002350 <_ZNSt8ios_baseD2Ev@plt>:
+    2350:	f3 0f 1e fa          	endbr64 
+    2354:	f2 ff 25 35 4b 00 00 	bnd jmpq *0x4b35(%rip)        # 6e90 <_ZNSt8ios_baseD2Ev@GLIBCXX_3.4>
+    235b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002360 <_ZSt17__throw_bad_allocv@plt>:
+    2360:	f3 0f 1e fa          	endbr64 
+    2364:	f2 ff 25 2d 4b 00 00 	bnd jmpq *0x4b2d(%rip)        # 6e98 <_ZSt17__throw_bad_allocv@GLIBCXX_3.4>
+    236b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002370 <__cxa_begin_catch@plt>:
+    2370:	f3 0f 1e fa          	endbr64 
+    2374:	f2 ff 25 25 4b 00 00 	bnd jmpq *0x4b25(%rip)        # 6ea0 <__cxa_begin_catch@CXXABI_1.3>
+    237b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002380 <_ZSt20__throw_length_errorPKc@plt>:
+    2380:	f3 0f 1e fa          	endbr64 
+    2384:	f2 ff 25 1d 4b 00 00 	bnd jmpq *0x4b1d(%rip)        # 6ea8 <_ZSt20__throw_length_errorPKc@GLIBCXX_3.4>
+    238b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002390 <_ZNSo9_M_insertImEERSoT_@plt>:
+    2390:	f3 0f 1e fa          	endbr64 
+    2394:	f2 ff 25 15 4b 00 00 	bnd jmpq *0x4b15(%rip)        # 6eb0 <_ZNSo9_M_insertImEERSoT_@GLIBCXX_3.4.9>
+    239b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000023a0 <_ZNSo5flushEv@plt>:
+    23a0:	f3 0f 1e fa          	endbr64 
+    23a4:	f2 ff 25 0d 4b 00 00 	bnd jmpq *0x4b0d(%rip)        # 6eb8 <_ZNSo5flushEv@GLIBCXX_3.4>
+    23ab:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000023b0 <_ZSt19__throw_logic_errorPKc@plt>:
+    23b0:	f3 0f 1e fa          	endbr64 
+    23b4:	f2 ff 25 05 4b 00 00 	bnd jmpq *0x4b05(%rip)        # 6ec0 <_ZSt19__throw_logic_errorPKc@GLIBCXX_3.4>
+    23bb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000023c0 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>:
+    23c0:	f3 0f 1e fa          	endbr64 
+    23c4:	f2 ff 25 fd 4a 00 00 	bnd jmpq *0x4afd(%rip)        # 6ec8 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@GLIBCXX_3.4.21>
+    23cb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000023d0 <_ZSt28__throw_bad_array_new_lengthv@plt>:
+    23d0:	f3 0f 1e fa          	endbr64 
+    23d4:	f2 ff 25 f5 4a 00 00 	bnd jmpq *0x4af5(%rip)        # 6ed0 <_ZSt28__throw_bad_array_new_lengthv@GLIBCXX_3.4.29>
+    23db:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000023e0 <memcpy@plt>:
+    23e0:	f3 0f 1e fa          	endbr64 
+    23e4:	f2 ff 25 ed 4a 00 00 	bnd jmpq *0x4aed(%rip)        # 6ed8 <memcpy@GLIBC_2.14>
+    23eb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000023f0 <__cxa_atexit@plt>:
+    23f0:	f3 0f 1e fa          	endbr64 
+    23f4:	f2 ff 25 e5 4a 00 00 	bnd jmpq *0x4ae5(%rip)        # 6ee0 <__cxa_atexit@GLIBC_2.2.5>
+    23fb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002400 <_ZNSt13basic_filebufIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode@plt>:
+    2400:	f3 0f 1e fa          	endbr64 
+    2404:	f2 ff 25 dd 4a 00 00 	bnd jmpq *0x4add(%rip)        # 6ee8 <_ZNSt13basic_filebufIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode@GLIBCXX_3.4>
+    240b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002410 <_ZNSo9_M_insertIlEERSoT_@plt>:
+    2410:	f3 0f 1e fa          	endbr64 
+    2414:	f2 ff 25 d5 4a 00 00 	bnd jmpq *0x4ad5(%rip)        # 6ef0 <_ZNSo9_M_insertIlEERSoT_@GLIBCXX_3.4.9>
+    241b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>:
+    2420:	f3 0f 1e fa          	endbr64 
+    2424:	f2 ff 25 cd 4a 00 00 	bnd jmpq *0x4acd(%rip)        # 6ef8 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@GLIBCXX_3.4>
+    242b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002430 <_Znwm@plt>:
+    2430:	f3 0f 1e fa          	endbr64 
+    2434:	f2 ff 25 c5 4a 00 00 	bnd jmpq *0x4ac5(%rip)        # 6f00 <_Znwm@GLIBCXX_3.4>
+    243b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002440 <_ZdlPvm@plt>:
+    2440:	f3 0f 1e fa          	endbr64 
+    2444:	f2 ff 25 bd 4a 00 00 	bnd jmpq *0x4abd(%rip)        # 6f08 <_ZdlPvm@CXXABI_1.3.9>
+    244b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002450 <_ZNSt13basic_filebufIcSt11char_traitsIcEEC1Ev@plt>:
+    2450:	f3 0f 1e fa          	endbr64 
+    2454:	f2 ff 25 b5 4a 00 00 	bnd jmpq *0x4ab5(%rip)        # 6f10 <_ZNSt13basic_filebufIcSt11char_traitsIcEEC1Ev@GLIBCXX_3.4>
+    245b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002460 <__stack_chk_fail@plt>:
+    2460:	f3 0f 1e fa          	endbr64 
+    2464:	f2 ff 25 ad 4a 00 00 	bnd jmpq *0x4aad(%rip)        # 6f18 <__stack_chk_fail@GLIBC_2.4>
+    246b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002470 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>:
+    2470:	f3 0f 1e fa          	endbr64 
+    2474:	f2 ff 25 a5 4a 00 00 	bnd jmpq *0x4aa5(%rip)        # 6f20 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@GLIBCXX_3.4.9>
+    247b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002480 <_ZNKSt5ctypeIcE13_M_widen_initEv@plt>:
+    2480:	f3 0f 1e fa          	endbr64 
+    2484:	f2 ff 25 9d 4a 00 00 	bnd jmpq *0x4a9d(%rip)        # 6f28 <_ZNKSt5ctypeIcE13_M_widen_initEv@GLIBCXX_3.4.11>
+    248b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>:
+    2490:	f3 0f 1e fa          	endbr64 
+    2494:	f2 ff 25 95 4a 00 00 	bnd jmpq *0x4a95(%rip)        # 6f30 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@GLIBCXX_3.4.21>
+    249b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000024a0 <_ZSt16__throw_bad_castv@plt>:
+    24a0:	f3 0f 1e fa          	endbr64 
+    24a4:	f2 ff 25 8d 4a 00 00 	bnd jmpq *0x4a8d(%rip)        # 6f38 <_ZSt16__throw_bad_castv@GLIBCXX_3.4>
+    24ab:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000024b0 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcmm@plt>:
+    24b0:	f3 0f 1e fa          	endbr64 
+    24b4:	f2 ff 25 85 4a 00 00 	bnd jmpq *0x4a85(%rip)        # 6f40 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcmm@GLIBCXX_3.4.21>
+    24bb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000024c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>:
+    24c0:	f3 0f 1e fa          	endbr64 
+    24c4:	f2 ff 25 7d 4a 00 00 	bnd jmpq *0x4a7d(%rip)        # 6f48 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@GLIBCXX_3.4>
+    24cb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000024d0 <_ZNSt6localeD1Ev@plt>:
+    24d0:	f3 0f 1e fa          	endbr64 
+    24d4:	f2 ff 25 75 4a 00 00 	bnd jmpq *0x4a75(%rip)        # 6f50 <_ZNSt6localeD1Ev@GLIBCXX_3.4>
+    24db:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000024e0 <__cxa_rethrow@plt>:
+    24e0:	f3 0f 1e fa          	endbr64 
+    24e4:	f2 ff 25 6d 4a 00 00 	bnd jmpq *0x4a6d(%rip)        # 6f58 <__cxa_rethrow@CXXABI_1.3>
+    24eb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+00000000000024f0 <_ZNSt8ios_base4InitC1Ev@plt>:
+    24f0:	f3 0f 1e fa          	endbr64 
+    24f4:	f2 ff 25 65 4a 00 00 	bnd jmpq *0x4a65(%rip)        # 6f60 <_ZNSt8ios_base4InitC1Ev@GLIBCXX_3.4>
+    24fb:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002500 <_ZNSt13basic_filebufIcSt11char_traitsIcEED1Ev@plt>:
+    2500:	f3 0f 1e fa          	endbr64 
+    2504:	f2 ff 25 5d 4a 00 00 	bnd jmpq *0x4a5d(%rip)        # 6f68 <_ZNSt13basic_filebufIcSt11char_traitsIcEED1Ev@GLIBCXX_3.4>
+    250b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002510 <memmove@plt>:
+    2510:	f3 0f 1e fa          	endbr64 
+    2514:	f2 ff 25 55 4a 00 00 	bnd jmpq *0x4a55(%rip)        # 6f70 <memmove@GLIBC_2.2.5>
+    251b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002520 <__cxa_end_catch@plt>:
+    2520:	f3 0f 1e fa          	endbr64 
+    2524:	f2 ff 25 4d 4a 00 00 	bnd jmpq *0x4a4d(%rip)        # 6f78 <__cxa_end_catch@CXXABI_1.3>
+    252b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002530 <_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate@plt>:
+    2530:	f3 0f 1e fa          	endbr64 
+    2534:	f2 ff 25 45 4a 00 00 	bnd jmpq *0x4a45(%rip)        # 6f80 <_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate@GLIBCXX_3.4>
+    253b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002540 <_ZNSi10_M_extractIjEERSiRT_@plt>:
+    2540:	f3 0f 1e fa          	endbr64 
+    2544:	f2 ff 25 3d 4a 00 00 	bnd jmpq *0x4a3d(%rip)        # 6f88 <_ZNSi10_M_extractIjEERSiRT_@GLIBCXX_3.4.9>
+    254b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002550 <_Unwind_Resume@plt>:
+    2550:	f3 0f 1e fa          	endbr64 
+    2554:	f2 ff 25 35 4a 00 00 	bnd jmpq *0x4a35(%rip)        # 6f90 <_Unwind_Resume@GCC_3.0>
+    255b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002560 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm@plt>:
+    2560:	f3 0f 1e fa          	endbr64 
+    2564:	f2 ff 25 2d 4a 00 00 	bnd jmpq *0x4a2d(%rip)        # 6f98 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm@GLIBCXX_3.4.21>
+    256b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002570 <_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_@plt>:
+    2570:	f3 0f 1e fa          	endbr64 
+    2574:	f2 ff 25 25 4a 00 00 	bnd jmpq *0x4a25(%rip)        # 6fa0 <_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_@GLIBCXX_3.4.21>
+    257b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002580 <_ZNSt12__basic_fileIcED1Ev@plt>:
+    2580:	f3 0f 1e fa          	endbr64 
+    2584:	f2 ff 25 1d 4a 00 00 	bnd jmpq *0x4a1d(%rip)        # 6fa8 <_ZNSt12__basic_fileIcED1Ev@GLIBCXX_3.4>
+    258b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000002590 <_ZNSt6localeC1Ev@plt>:
+    2590:	f3 0f 1e fa          	endbr64 
+    2594:	f2 ff 25 15 4a 00 00 	bnd jmpq *0x4a15(%rip)        # 6fb0 <_ZNSt6localeC1Ev@GLIBCXX_3.4>
+    259b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+Disassembly of section .text:
+
+00000000000025a0 <_start>:
+    25a0:	f3 0f 1e fa          	endbr64 
+    25a4:	31 ed                	xor    %ebp,%ebp
+    25a6:	49 89 d1             	mov    %rdx,%r9
+    25a9:	5e                   	pop    %rsi
+    25aa:	48 89 e2             	mov    %rsp,%rdx
+    25ad:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+    25b1:	50                   	push   %rax
+    25b2:	54                   	push   %rsp
+    25b3:	4c 8d 05 a6 1a 00 00 	lea    0x1aa6(%rip),%r8        # 4060 <__libc_csu_fini>
+    25ba:	48 8d 0d 2f 1a 00 00 	lea    0x1a2f(%rip),%rcx        # 3ff0 <__libc_csu_init>
+    25c1:	48 8d 3d ea 00 00 00 	lea    0xea(%rip),%rdi        # 26b2 <main>
+    25c8:	ff 15 fa 49 00 00    	callq  *0x49fa(%rip)        # 6fc8 <__libc_start_main@GLIBC_2.2.5>
+    25ce:	f4                   	hlt    
+    25cf:	90                   	nop
+
+00000000000025d0 <deregister_tm_clones>:
+    25d0:	48 8d 3d 41 4a 00 00 	lea    0x4a41(%rip),%rdi        # 7018 <__TMC_END__>
+    25d7:	48 8d 05 3a 4a 00 00 	lea    0x4a3a(%rip),%rax        # 7018 <__TMC_END__>
+    25de:	48 39 f8             	cmp    %rdi,%rax
+    25e1:	74 15                	je     25f8 <deregister_tm_clones+0x28>
+    25e3:	48 8b 05 d6 49 00 00 	mov    0x49d6(%rip),%rax        # 6fc0 <_ITM_deregisterTMCloneTable>
+    25ea:	48 85 c0             	test   %rax,%rax
+    25ed:	74 09                	je     25f8 <deregister_tm_clones+0x28>
+    25ef:	ff e0                	jmpq   *%rax
+    25f1:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+    25f8:	c3                   	retq   
+    25f9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000002600 <register_tm_clones>:
+    2600:	48 8d 3d 11 4a 00 00 	lea    0x4a11(%rip),%rdi        # 7018 <__TMC_END__>
+    2607:	48 8d 35 0a 4a 00 00 	lea    0x4a0a(%rip),%rsi        # 7018 <__TMC_END__>
+    260e:	48 29 fe             	sub    %rdi,%rsi
+    2611:	48 89 f0             	mov    %rsi,%rax
+    2614:	48 c1 ee 3f          	shr    $0x3f,%rsi
+    2618:	48 c1 f8 03          	sar    $0x3,%rax
+    261c:	48 01 c6             	add    %rax,%rsi
+    261f:	48 d1 fe             	sar    %rsi
+    2622:	74 14                	je     2638 <register_tm_clones+0x38>
+    2624:	48 8b 05 ad 49 00 00 	mov    0x49ad(%rip),%rax        # 6fd8 <_ITM_registerTMCloneTable>
+    262b:	48 85 c0             	test   %rax,%rax
+    262e:	74 08                	je     2638 <register_tm_clones+0x38>
+    2630:	ff e0                	jmpq   *%rax
+    2632:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+    2638:	c3                   	retq   
+    2639:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000002640 <__do_global_dtors_aux>:
+    2640:	f3 0f 1e fa          	endbr64 
+    2644:	80 3d 05 4b 00 00 00 	cmpb   $0x0,0x4b05(%rip)        # 7150 <completed.0>
+    264b:	75 2b                	jne    2678 <__do_global_dtors_aux+0x38>
+    264d:	55                   	push   %rbp
+    264e:	48 83 3d 62 49 00 00 	cmpq   $0x0,0x4962(%rip)        # 6fb8 <__cxa_finalize@GLIBC_2.2.5>
+    2655:	00 
+    2656:	48 89 e5             	mov    %rsp,%rbp
+    2659:	74 0c                	je     2667 <__do_global_dtors_aux+0x27>
+    265b:	48 8b 3d a6 49 00 00 	mov    0x49a6(%rip),%rdi        # 7008 <__dso_handle>
+    2662:	e8 79 fc ff ff       	callq  22e0 <__cxa_finalize@plt>
+    2667:	e8 64 ff ff ff       	callq  25d0 <deregister_tm_clones>
+    266c:	c6 05 dd 4a 00 00 01 	movb   $0x1,0x4add(%rip)        # 7150 <completed.0>
+    2673:	5d                   	pop    %rbp
+    2674:	c3                   	retq   
+    2675:	0f 1f 00             	nopl   (%rax)
+    2678:	c3                   	retq   
+    2679:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000002680 <frame_dummy>:
+    2680:	f3 0f 1e fa          	endbr64 
+    2684:	e9 77 ff ff ff       	jmpq   2600 <register_tm_clones>
+
+0000000000002689 <_Z10getline_asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEiRSiRT_>:
+    2689:	f3 0f 1e fa          	endbr64 
+    268d:	48 83 ec 08          	sub    $0x8,%rsp
+    2691:	ba 2c 00 00 00       	mov    $0x2c,%edx
+    2696:	e8 d5 fe ff ff       	callq  2570 <_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_@plt>
+    269b:	48 8b 10             	mov    (%rax),%rdx
+    269e:	48 8b 52 e8          	mov    -0x18(%rdx),%rdx
+    26a2:	f6 44 10 20 05       	testb  $0x5,0x20(%rax,%rdx,1)
+    26a7:	0f 94 c0             	sete   %al
+    26aa:	0f b6 c0             	movzbl %al,%eax
+    26ad:	48 83 c4 08          	add    $0x8,%rsp
+    26b1:	c3                   	retq   
+
+00000000000026b2 <main>:
+    26b2:	f3 0f 1e fa          	endbr64 
+    26b6:	41 57                	push   %r15
+    26b8:	41 56                	push   %r14
+    26ba:	41 55                	push   %r13
+    26bc:	41 54                	push   %r12
+    26be:	55                   	push   %rbp
+    26bf:	53                   	push   %rbx
+    26c0:	48 81 ec 88 00 00 00 	sub    $0x88,%rsp
+    26c7:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    26ce:	00 00 
+    26d0:	48 89 44 24 78       	mov    %rax,0x78(%rsp)
+    26d5:	31 c0                	xor    %eax,%eax
+    26d7:	bf 18 00 00 00       	mov    $0x18,%edi
+    26dc:	e8 4f fd ff ff       	callq  2430 <_Znwm@plt>
+    26e1:	48 c7 00 00 00 00 00 	movq   $0x0,(%rax)
+    26e8:	48 c7 40 08 00 00 00 	movq   $0x0,0x8(%rax)
+    26ef:	00 
+    26f0:	48 c7 40 10 00 00 00 	movq   $0x0,0x10(%rax)
+    26f7:	00 
+    26f8:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    26fd:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    2704:	00 00 
+    2706:	48 c7 44 24 40 00 00 	movq   $0x0,0x40(%rsp)
+    270d:	00 00 
+    270f:	e8 ec fb ff ff       	callq  2300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+    2714:	48 89 c5             	mov    %rax,%rbp
+    2717:	48 8d 5c 24 50       	lea    0x50(%rsp),%rbx
+    271c:	48 8d 44 24 60       	lea    0x60(%rsp),%rax
+    2721:	48 89 44 24 50       	mov    %rax,0x50(%rsp)
+    2726:	48 8d 15 51 29 00 00 	lea    0x2951(%rip),%rdx        # 507e <_IO_stdin_used+0x7e>
+    272d:	48 8d 72 f0          	lea    -0x10(%rdx),%rsi
+    2731:	48 89 df             	mov    %rbx,%rdi
+    2734:	e8 cb 08 00 00       	callq  3004 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag>
+    2739:	48 8d 7c 24 30       	lea    0x30(%rsp),%rdi
+    273e:	48 89 de             	mov    %rbx,%rsi
+    2741:	e8 96 13 00 00       	callq  3adc <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE>
+    2746:	48 89 df             	mov    %rbx,%rdi
+    2749:	e8 42 fd ff ff       	callq  2490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+    274e:	e8 ad fb ff ff       	callq  2300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+    2753:	48 89 c3             	mov    %rax,%rbx
+    2756:	48 8d 35 22 29 00 00 	lea    0x2922(%rip),%rsi        # 507f <_IO_stdin_used+0x7f>
+    275d:	48 8d 3d dc 48 00 00 	lea    0x48dc(%rip),%rdi        # 7040 <_ZSt4cout@@GLIBCXX_3.4>
+    2764:	e8 b7 fc ff ff       	callq  2420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    2769:	48 89 c7             	mov    %rax,%rdi
+    276c:	48 89 d9             	mov    %rbx,%rcx
+    276f:	48 29 e9             	sub    %rbp,%rcx
+    2772:	48 ba db 34 b6 d7 82 	movabs $0x431bde82d7b634db,%rdx
+    2779:	de 1b 43 
+    277c:	48 89 c8             	mov    %rcx,%rax
+    277f:	48 f7 ea             	imul   %rdx
+    2782:	48 c1 fa 12          	sar    $0x12,%rdx
+    2786:	48 c1 f9 3f          	sar    $0x3f,%rcx
+    278a:	48 29 ca             	sub    %rcx,%rdx
+    278d:	48 89 d6             	mov    %rdx,%rsi
+    2790:	e8 7b fc ff ff       	callq  2410 <_ZNSo9_M_insertIlEERSoT_@plt>
+    2795:	48 89 c7             	mov    %rax,%rdi
+    2798:	48 8d 35 eb 28 00 00 	lea    0x28eb(%rip),%rsi        # 508a <_IO_stdin_used+0x8a>
+    279f:	e8 7c fc ff ff       	callq  2420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    27a4:	e8 57 fb ff ff       	callq  2300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+    27a9:	48 89 44 24 28       	mov    %rax,0x28(%rsp)
+    27ae:	c7 44 24 20 64 00 00 	movl   $0x64,0x20(%rsp)
+    27b5:	00 
+    27b6:	48 8d 2d 9b 49 00 00 	lea    0x499b(%rip),%rbp        # 7158 <distribution>
+    27bd:	4c 8d 2d 9c 49 00 00 	lea    0x499c(%rip),%r13        # 7160 <generator>
+    27c4:	e9 bd 00 00 00       	jmpq   2886 <main+0x1d4>
+    27c9:	48 85 c0             	test   %rax,%rax
+    27cc:	79 05                	jns    27d3 <main+0x121>
+    27ce:	e8 fd fb ff ff       	callq  23d0 <_ZSt28__throw_bad_array_new_lengthv@plt>
+    27d3:	e8 88 fb ff ff       	callq  2360 <_ZSt17__throw_bad_allocv@plt>
+    27d8:	41 bf 00 00 00 00    	mov    $0x0,%r15d
+    27de:	eb 52                	jmp    2832 <main+0x180>
+    27e0:	4d 01 fc             	add    %r15,%r12
+    27e3:	4d 39 fc             	cmp    %r15,%r12
+    27e6:	75 6f                	jne    2857 <main+0x1a5>
+    27e8:	e9 84 00 00 00       	jmpq   2871 <main+0x1bf>
+    27ed:	48 8b 74 24 08       	mov    0x8(%rsp),%rsi
+    27f2:	4c 89 ff             	mov    %r15,%rdi
+    27f5:	e8 46 fc ff ff       	callq  2440 <_ZdlPvm@plt>
+    27fa:	49 83 c6 18          	add    $0x18,%r14
+    27fe:	4c 39 74 24 10       	cmp    %r14,0x10(%rsp)
+    2803:	74 7a                	je     287f <main+0x1cd>
+    2805:	4c 89 f3             	mov    %r14,%rbx
+    2808:	49 8b 46 08          	mov    0x8(%r14),%rax
+    280c:	49 2b 06             	sub    (%r14),%rax
+    280f:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    2814:	74 c2                	je     27d8 <main+0x126>
+    2816:	48 b9 fc ff ff ff ff 	movabs $0x7ffffffffffffffc,%rcx
+    281d:	ff ff 7f 
+    2820:	48 39 c8             	cmp    %rcx,%rax
+    2823:	77 a4                	ja     27c9 <main+0x117>
+    2825:	48 8b 7c 24 08       	mov    0x8(%rsp),%rdi
+    282a:	e8 01 fc ff ff       	callq  2430 <_Znwm@plt>
+    282f:	49 89 c7             	mov    %rax,%r15
+    2832:	48 8b 43 08          	mov    0x8(%rbx),%rax
+    2836:	48 8b 33             	mov    (%rbx),%rsi
+    2839:	49 89 c4             	mov    %rax,%r12
+    283c:	49 29 f4             	sub    %rsi,%r12
+    283f:	48 39 f0             	cmp    %rsi,%rax
+    2842:	74 9c                	je     27e0 <main+0x12e>
+    2844:	4c 89 e2             	mov    %r12,%rdx
+    2847:	4c 89 ff             	mov    %r15,%rdi
+    284a:	e8 c1 fc ff ff       	callq  2510 <memmove@plt>
+    284f:	4d 01 fc             	add    %r15,%r12
+    2852:	4d 39 e7             	cmp    %r12,%r15
+    2855:	74 96                	je     27ed <main+0x13b>
+    2857:	4c 89 fb             	mov    %r15,%rbx
+    285a:	48 89 ea             	mov    %rbp,%rdx
+    285d:	4c 89 ee             	mov    %r13,%rsi
+    2860:	48 89 ef             	mov    %rbp,%rdi
+    2863:	e8 7c 02 00 00       	callq  2ae4 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE>
+    2868:	48 83 c3 04          	add    $0x4,%rbx
+    286c:	49 39 dc             	cmp    %rbx,%r12
+    286f:	75 e9                	jne    285a <main+0x1a8>
+    2871:	4d 85 ff             	test   %r15,%r15
+    2874:	0f 85 73 ff ff ff    	jne    27ed <main+0x13b>
+    287a:	e9 7b ff ff ff       	jmpq   27fa <main+0x148>
+    287f:	83 6c 24 20 01       	subl   $0x1,0x20(%rsp)
+    2884:	74 21                	je     28a7 <main+0x1f5>
+    2886:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+    288b:	48 89 44 24 18       	mov    %rax,0x18(%rsp)
+    2890:	4c 8b 30             	mov    (%rax),%r14
+    2893:	48 8b 40 08          	mov    0x8(%rax),%rax
+    2897:	48 89 44 24 10       	mov    %rax,0x10(%rsp)
+    289c:	4c 39 f0             	cmp    %r14,%rax
+    289f:	0f 85 60 ff ff ff    	jne    2805 <main+0x153>
+    28a5:	eb d8                	jmp    287f <main+0x1cd>
+    28a7:	e8 54 fa ff ff       	callq  2300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+    28ac:	48 89 c3             	mov    %rax,%rbx
+    28af:	48 8d 35 d8 27 00 00 	lea    0x27d8(%rip),%rsi        # 508e <_IO_stdin_used+0x8e>
+    28b6:	48 8d 3d 83 47 00 00 	lea    0x4783(%rip),%rdi        # 7040 <_ZSt4cout@@GLIBCXX_3.4>
+    28bd:	e8 5e fb ff ff       	callq  2420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    28c2:	48 89 c7             	mov    %rax,%rdi
+    28c5:	48 89 d8             	mov    %rbx,%rax
+    28c8:	48 2b 44 24 28       	sub    0x28(%rsp),%rax
+    28cd:	b9 00 e1 f5 05       	mov    $0x5f5e100,%ecx
+    28d2:	48 99                	cqto   
+    28d4:	48 f7 f9             	idiv   %rcx
+    28d7:	48 89 c6             	mov    %rax,%rsi
+    28da:	e8 31 fb ff ff       	callq  2410 <_ZNSo9_M_insertIlEERSoT_@plt>
+    28df:	48 89 c7             	mov    %rax,%rdi
+    28e2:	48 8d 35 a1 27 00 00 	lea    0x27a1(%rip),%rsi        # 508a <_IO_stdin_used+0x8a>
+    28e9:	e8 32 fb ff ff       	callq  2420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    28ee:	e8 0d fa ff ff       	callq  2300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+    28f3:	48 89 44 24 20       	mov    %rax,0x20(%rsp)
+    28f8:	c7 44 24 28 64 00 00 	movl   $0x64,0x28(%rsp)
+    28ff:	00 
+    2900:	48 8d 2d 51 48 00 00 	lea    0x4851(%rip),%rbp        # 7158 <distribution>
+    2907:	e9 bd 00 00 00       	jmpq   29c9 <main+0x317>
+    290c:	48 85 c0             	test   %rax,%rax
+    290f:	79 05                	jns    2916 <main+0x264>
+    2911:	e8 ba fa ff ff       	callq  23d0 <_ZSt28__throw_bad_array_new_lengthv@plt>
+    2916:	e8 45 fa ff ff       	callq  2360 <_ZSt17__throw_bad_allocv@plt>
+    291b:	41 bf 00 00 00 00    	mov    $0x0,%r15d
+    2921:	eb 52                	jmp    2975 <main+0x2c3>
+    2923:	4d 01 fc             	add    %r15,%r12
+    2926:	4d 39 fc             	cmp    %r15,%r12
+    2929:	75 6f                	jne    299a <main+0x2e8>
+    292b:	e9 84 00 00 00       	jmpq   29b4 <main+0x302>
+    2930:	48 8b 74 24 08       	mov    0x8(%rsp),%rsi
+    2935:	4c 89 ff             	mov    %r15,%rdi
+    2938:	e8 03 fb ff ff       	callq  2440 <_ZdlPvm@plt>
+    293d:	49 83 c6 18          	add    $0x18,%r14
+    2941:	4c 89 f3             	mov    %r14,%rbx
+    2944:	4c 39 74 24 10       	cmp    %r14,0x10(%rsp)
+    2949:	74 77                	je     29c2 <main+0x310>
+    294b:	49 8b 46 08          	mov    0x8(%r14),%rax
+    294f:	49 2b 06             	sub    (%r14),%rax
+    2952:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    2957:	74 c2                	je     291b <main+0x269>
+    2959:	48 b9 fc ff ff ff ff 	movabs $0x7ffffffffffffffc,%rcx
+    2960:	ff ff 7f 
+    2963:	48 39 c8             	cmp    %rcx,%rax
+    2966:	77 a4                	ja     290c <main+0x25a>
+    2968:	48 8b 7c 24 08       	mov    0x8(%rsp),%rdi
+    296d:	e8 be fa ff ff       	callq  2430 <_Znwm@plt>
+    2972:	49 89 c7             	mov    %rax,%r15
+    2975:	48 8b 43 08          	mov    0x8(%rbx),%rax
+    2979:	48 8b 33             	mov    (%rbx),%rsi
+    297c:	49 89 c4             	mov    %rax,%r12
+    297f:	49 29 f4             	sub    %rsi,%r12
+    2982:	48 39 f0             	cmp    %rsi,%rax
+    2985:	74 9c                	je     2923 <main+0x271>
+    2987:	4c 89 e2             	mov    %r12,%rdx
+    298a:	4c 89 ff             	mov    %r15,%rdi
+    298d:	e8 7e fb ff ff       	callq  2510 <memmove@plt>
+    2992:	4d 01 fc             	add    %r15,%r12
+    2995:	4d 39 fc             	cmp    %r15,%r12
+    2998:	74 96                	je     2930 <main+0x27e>
+    299a:	4c 89 fb             	mov    %r15,%rbx
+    299d:	48 89 ea             	mov    %rbp,%rdx
+    29a0:	4c 89 ee             	mov    %r13,%rsi
+    29a3:	48 89 ef             	mov    %rbp,%rdi
+    29a6:	e8 39 01 00 00       	callq  2ae4 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE>
+    29ab:	48 83 c3 04          	add    $0x4,%rbx
+    29af:	49 39 dc             	cmp    %rbx,%r12
+    29b2:	75 e9                	jne    299d <main+0x2eb>
+    29b4:	4d 85 ff             	test   %r15,%r15
+    29b7:	0f 85 73 ff ff ff    	jne    2930 <main+0x27e>
+    29bd:	e9 7b ff ff ff       	jmpq   293d <main+0x28b>
+    29c2:	83 6c 24 28 01       	subl   $0x1,0x28(%rsp)
+    29c7:	74 1d                	je     29e6 <main+0x334>
+    29c9:	48 8b 44 24 18       	mov    0x18(%rsp),%rax
+    29ce:	48 8b 48 08          	mov    0x8(%rax),%rcx
+    29d2:	48 89 4c 24 10       	mov    %rcx,0x10(%rsp)
+    29d7:	4c 8b 30             	mov    (%rax),%r14
+    29da:	4c 8d 2d 7f 47 00 00 	lea    0x477f(%rip),%r13        # 7160 <generator>
+    29e1:	e9 5b ff ff ff       	jmpq   2941 <main+0x28f>
+    29e6:	e8 15 f9 ff ff       	callq  2300 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+    29eb:	48 89 c3             	mov    %rax,%rbx
+    29ee:	48 8d 35 a2 26 00 00 	lea    0x26a2(%rip),%rsi        # 5097 <_IO_stdin_used+0x97>
+    29f5:	48 8d 3d 44 46 00 00 	lea    0x4644(%rip),%rdi        # 7040 <_ZSt4cout@@GLIBCXX_3.4>
+    29fc:	e8 1f fa ff ff       	callq  2420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    2a01:	48 89 c7             	mov    %rax,%rdi
+    2a04:	48 89 d8             	mov    %rbx,%rax
+    2a07:	48 2b 44 24 20       	sub    0x20(%rsp),%rax
+    2a0c:	b9 00 e1 f5 05       	mov    $0x5f5e100,%ecx
+    2a11:	48 99                	cqto   
+    2a13:	48 f7 f9             	idiv   %rcx
+    2a16:	48 89 c6             	mov    %rax,%rsi
+    2a19:	e8 f2 f9 ff ff       	callq  2410 <_ZNSo9_M_insertIlEERSoT_@plt>
+    2a1e:	48 89 c7             	mov    %rax,%rdi
+    2a21:	48 8d 35 62 26 00 00 	lea    0x2662(%rip),%rsi        # 508a <_IO_stdin_used+0x8a>
+    2a28:	e8 f3 f9 ff ff       	callq  2420 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    2a2d:	48 8b 44 24 78       	mov    0x78(%rsp),%rax
+    2a32:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    2a39:	00 00 
+    2a3b:	75 30                	jne    2a6d <main+0x3bb>
+    2a3d:	b8 00 00 00 00       	mov    $0x0,%eax
+    2a42:	48 81 c4 88 00 00 00 	add    $0x88,%rsp
+    2a49:	5b                   	pop    %rbx
+    2a4a:	5d                   	pop    %rbp
+    2a4b:	41 5c                	pop    %r12
+    2a4d:	41 5d                	pop    %r13
+    2a4f:	41 5e                	pop    %r14
+    2a51:	41 5f                	pop    %r15
+    2a53:	c3                   	retq   
+    2a54:	f3 0f 1e fa          	endbr64 
+    2a58:	48 89 c3             	mov    %rax,%rbx
+    2a5b:	48 8d 7c 24 50       	lea    0x50(%rsp),%rdi
+    2a60:	e8 2b fa ff ff       	callq  2490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+    2a65:	48 89 df             	mov    %rbx,%rdi
+    2a68:	e8 e3 fa ff ff       	callq  2550 <_Unwind_Resume@plt>
+    2a6d:	e8 ee f9 ff ff       	callq  2460 <__stack_chk_fail@plt>
+
+0000000000002a72 <_GLOBAL__sub_I__Z10getline_asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEiRSiRT_>:
+    2a72:	f3 0f 1e fa          	endbr64 
+    2a76:	53                   	push   %rbx
+    2a77:	48 8d 1d ea 46 00 00 	lea    0x46ea(%rip),%rbx        # 7168 <_ZStL8__ioinit>
+    2a7e:	48 89 df             	mov    %rbx,%rdi
+    2a81:	e8 6a fa ff ff       	callq  24f0 <_ZNSt8ios_base4InitC1Ev@plt>
+    2a86:	48 8d 15 7b 45 00 00 	lea    0x457b(%rip),%rdx        # 7008 <__dso_handle>
+    2a8d:	48 89 de             	mov    %rbx,%rsi
+    2a90:	48 8b 3d 49 45 00 00 	mov    0x4549(%rip),%rdi        # 6fe0 <_ZNSt8ios_base4InitD1Ev@GLIBCXX_3.4>
+    2a97:	e8 54 f9 ff ff       	callq  23f0 <__cxa_atexit@plt>
+    2a9c:	48 c7 05 b9 46 00 00 	movq   $0x1,0x46b9(%rip)        # 7160 <generator>
+    2aa3:	01 00 00 00 
+    2aa7:	c7 05 a7 46 00 00 00 	movl   $0x0,0x46a7(%rip)        # 7158 <distribution>
+    2aae:	00 00 00 
+    2ab1:	c7 05 a1 46 00 00 1d 	movl   $0x1d,0x46a1(%rip)        # 715c <distribution+0x4>
+    2ab8:	00 00 00 
+    2abb:	5b                   	pop    %rbx
+    2abc:	c3                   	retq   
+    2abd:	90                   	nop
+
+0000000000002abe <_ZNSt12_Vector_baseIjSaIjEED1Ev>:
+    2abe:	f3 0f 1e fa          	endbr64 
+    2ac2:	48 8b 07             	mov    (%rdi),%rax
+    2ac5:	48 85 c0             	test   %rax,%rax
+    2ac8:	74 18                	je     2ae2 <_ZNSt12_Vector_baseIjSaIjEED1Ev+0x24>
+    2aca:	48 83 ec 08          	sub    $0x8,%rsp
+    2ace:	48 8b 77 10          	mov    0x10(%rdi),%rsi
+    2ad2:	48 29 c6             	sub    %rax,%rsi
+    2ad5:	48 89 c7             	mov    %rax,%rdi
+    2ad8:	e8 63 f9 ff ff       	callq  2440 <_ZdlPvm@plt>
+    2add:	48 83 c4 08          	add    $0x8,%rsp
+    2ae1:	c3                   	retq   
+    2ae2:	c3                   	retq   
+    2ae3:	90                   	nop
+
+0000000000002ae4 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE>:
+    2ae4:	f3 0f 1e fa          	endbr64 
+    2ae8:	41 57                	push   %r15
+    2aea:	41 56                	push   %r14
+    2aec:	41 55                	push   %r13
+    2aee:	41 54                	push   %r12
+    2af0:	55                   	push   %rbp
+    2af1:	53                   	push   %rbx
+    2af2:	48 83 ec 18          	sub    $0x18,%rsp
+    2af6:	48 89 f3             	mov    %rsi,%rbx
+    2af9:	48 89 d5             	mov    %rdx,%rbp
+    2afc:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    2b03:	00 00 
+    2b05:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    2b0a:	31 c0                	xor    %eax,%eax
+    2b0c:	44 8b 62 04          	mov    0x4(%rdx),%r12d
+    2b10:	8b 02                	mov    (%rdx),%eax
+    2b12:	49 29 c4             	sub    %rax,%r12
+    2b15:	49 81 fc fc ff ff 7f 	cmp    $0x7ffffffc,%r12
+    2b1c:	0f 87 8c 00 00 00    	ja     2bae <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0xca>
+    2b22:	49 83 c4 01          	add    $0x1,%r12
+    2b26:	b8 fd ff ff 7f       	mov    $0x7ffffffd,%eax
+    2b2b:	ba 00 00 00 00       	mov    $0x0,%edx
+    2b30:	49 f7 f4             	div    %r12
+    2b33:	49 89 c0             	mov    %rax,%r8
+    2b36:	4c 0f af e0          	imul   %rax,%r12
+    2b3a:	48 8b 16             	mov    (%rsi),%rdx
+    2b3d:	48 bf 05 00 00 00 02 	movabs $0x200000005,%rdi
+    2b44:	00 00 00 
+    2b47:	48 69 f2 a7 41 00 00 	imul   $0x41a7,%rdx,%rsi
+    2b4e:	48 89 f0             	mov    %rsi,%rax
+    2b51:	48 f7 e7             	mul    %rdi
+    2b54:	48 89 f1             	mov    %rsi,%rcx
+    2b57:	48 29 d1             	sub    %rdx,%rcx
+    2b5a:	48 d1 e9             	shr    %rcx
+    2b5d:	48 01 ca             	add    %rcx,%rdx
+    2b60:	48 c1 ea 1e          	shr    $0x1e,%rdx
+    2b64:	48 89 d1             	mov    %rdx,%rcx
+    2b67:	48 c1 e1 1f          	shl    $0x1f,%rcx
+    2b6b:	48 29 d1             	sub    %rdx,%rcx
+    2b6e:	48 29 ce             	sub    %rcx,%rsi
+    2b71:	48 89 f2             	mov    %rsi,%rdx
+    2b74:	48 8d 46 ff          	lea    -0x1(%rsi),%rax
+    2b78:	49 39 c4             	cmp    %rax,%r12
+    2b7b:	76 ca                	jbe    2b47 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0x63>
+    2b7d:	48 89 33             	mov    %rsi,(%rbx)
+    2b80:	ba 00 00 00 00       	mov    $0x0,%edx
+    2b85:	49 f7 f0             	div    %r8
+    2b88:	03 45 00             	add    0x0(%rbp),%eax
+    2b8b:	48 8b 54 24 08       	mov    0x8(%rsp),%rdx
+    2b90:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    2b97:	00 00 
+    2b99:	0f 85 f3 00 00 00    	jne    2c92 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0x1ae>
+    2b9f:	48 83 c4 18          	add    $0x18,%rsp
+    2ba3:	5b                   	pop    %rbx
+    2ba4:	5d                   	pop    %rbp
+    2ba5:	41 5c                	pop    %r12
+    2ba7:	41 5d                	pop    %r13
+    2ba9:	41 5e                	pop    %r14
+    2bab:	41 5f                	pop    %r15
+    2bad:	c3                   	retq   
+    2bae:	49 89 fd             	mov    %rdi,%r13
+    2bb1:	49 81 fc fd ff ff 7f 	cmp    $0x7ffffffd,%r12
+    2bb8:	0f 86 91 00 00 00    	jbe    2c4f <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0x16b>
+    2bbe:	4c 89 e2             	mov    %r12,%rdx
+    2bc1:	48 d1 ea             	shr    %rdx
+    2bc4:	48 b9 09 00 00 00 02 	movabs $0x8000000200000009,%rcx
+    2bcb:	00 00 80 
+    2bce:	48 89 d0             	mov    %rdx,%rax
+    2bd1:	48 f7 e1             	mul    %rcx
+    2bd4:	48 c1 ea 1d          	shr    $0x1d,%rdx
+    2bd8:	41 89 d6             	mov    %edx,%r14d
+    2bdb:	49 bf 05 00 00 00 02 	movabs $0x200000005,%r15
+    2be2:	00 00 00 
+    2be5:	c7 04 24 00 00 00 00 	movl   $0x0,(%rsp)
+    2bec:	44 89 74 24 04       	mov    %r14d,0x4(%rsp)
+    2bf1:	48 89 e2             	mov    %rsp,%rdx
+    2bf4:	48 89 de             	mov    %rbx,%rsi
+    2bf7:	4c 89 ef             	mov    %r13,%rdi
+    2bfa:	e8 e5 fe ff ff       	callq  2ae4 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE>
+    2bff:	89 c0                	mov    %eax,%eax
+    2c01:	48 89 c1             	mov    %rax,%rcx
+    2c04:	48 c1 e1 1e          	shl    $0x1e,%rcx
+    2c08:	48 29 c1             	sub    %rax,%rcx
+    2c0b:	48 01 c9             	add    %rcx,%rcx
+    2c0e:	48 69 33 a7 41 00 00 	imul   $0x41a7,(%rbx),%rsi
+    2c15:	48 89 f0             	mov    %rsi,%rax
+    2c18:	49 f7 e7             	mul    %r15
+    2c1b:	48 89 f0             	mov    %rsi,%rax
+    2c1e:	48 29 d0             	sub    %rdx,%rax
+    2c21:	48 d1 e8             	shr    %rax
+    2c24:	48 01 c2             	add    %rax,%rdx
+    2c27:	48 c1 ea 1e          	shr    $0x1e,%rdx
+    2c2b:	48 89 d0             	mov    %rdx,%rax
+    2c2e:	48 c1 e0 1f          	shl    $0x1f,%rax
+    2c32:	48 29 d0             	sub    %rdx,%rax
+    2c35:	48 29 c6             	sub    %rax,%rsi
+    2c38:	48 89 33             	mov    %rsi,(%rbx)
+    2c3b:	48 8d 44 0e ff       	lea    -0x1(%rsi,%rcx,1),%rax
+    2c40:	49 39 c4             	cmp    %rax,%r12
+    2c43:	72 a0                	jb     2be5 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0x101>
+    2c45:	48 39 c1             	cmp    %rax,%rcx
+    2c48:	77 9b                	ja     2be5 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0x101>
+    2c4a:	e9 39 ff ff ff       	jmpq   2b88 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0xa4>
+    2c4f:	48 69 0e a7 41 00 00 	imul   $0x41a7,(%rsi),%rcx
+    2c56:	48 ba 05 00 00 00 02 	movabs $0x200000005,%rdx
+    2c5d:	00 00 00 
+    2c60:	48 89 c8             	mov    %rcx,%rax
+    2c63:	48 f7 e2             	mul    %rdx
+    2c66:	48 89 c8             	mov    %rcx,%rax
+    2c69:	48 29 d0             	sub    %rdx,%rax
+    2c6c:	48 d1 e8             	shr    %rax
+    2c6f:	48 01 d0             	add    %rdx,%rax
+    2c72:	48 c1 e8 1e          	shr    $0x1e,%rax
+    2c76:	48 89 c2             	mov    %rax,%rdx
+    2c79:	48 c1 e2 1f          	shl    $0x1f,%rdx
+    2c7d:	48 29 c2             	sub    %rax,%rdx
+    2c80:	48 89 c8             	mov    %rcx,%rax
+    2c83:	48 29 d0             	sub    %rdx,%rax
+    2c86:	48 89 06             	mov    %rax,(%rsi)
+    2c89:	48 83 e8 01          	sub    $0x1,%rax
+    2c8d:	e9 f6 fe ff ff       	jmpq   2b88 <_ZNSt24uniform_int_distributionIjEclISt26linear_congruential_engineImLm16807ELm0ELm2147483647EEEEjRT_RKNS0_10param_typeE+0xa4>
+    2c92:	e8 c9 f7 ff ff       	callq  2460 <__stack_chk_fail@plt>
+    2c97:	90                   	nop
+
+0000000000002c98 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev>:
+    2c98:	f3 0f 1e fa          	endbr64 
+    2c9c:	53                   	push   %rbx
+    2c9d:	48 89 fb             	mov    %rdi,%rbx
+    2ca0:	48 8d 05 21 3f 00 00 	lea    0x3f21(%rip),%rax        # 6bc8 <_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    2ca7:	48 89 07             	mov    %rax,(%rdi)
+    2caa:	48 8b 7f 48          	mov    0x48(%rdi),%rdi
+    2cae:	48 8d 43 58          	lea    0x58(%rbx),%rax
+    2cb2:	48 39 c7             	cmp    %rax,%rdi
+    2cb5:	74 0d                	je     2cc4 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev+0x2c>
+    2cb7:	48 8b 43 58          	mov    0x58(%rbx),%rax
+    2cbb:	48 8d 70 01          	lea    0x1(%rax),%rsi
+    2cbf:	e8 7c f7 ff ff       	callq  2440 <_ZdlPvm@plt>
+    2cc4:	48 8d 05 15 3d 00 00 	lea    0x3d15(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    2ccb:	48 89 03             	mov    %rax,(%rbx)
+    2cce:	48 8d 7b 38          	lea    0x38(%rbx),%rdi
+    2cd2:	e8 f9 f7 ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    2cd7:	5b                   	pop    %rbx
+    2cd8:	c3                   	retq   
+    2cd9:	90                   	nop
+
+0000000000002cda <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev>:
+    2cda:	f3 0f 1e fa          	endbr64 
+    2cde:	53                   	push   %rbx
+    2cdf:	48 89 fb             	mov    %rdi,%rbx
+    2ce2:	48 8d 05 df 3e 00 00 	lea    0x3edf(%rip),%rax        # 6bc8 <_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    2ce9:	48 89 07             	mov    %rax,(%rdi)
+    2cec:	48 8b 7f 48          	mov    0x48(%rdi),%rdi
+    2cf0:	48 8d 43 58          	lea    0x58(%rbx),%rax
+    2cf4:	48 39 c7             	cmp    %rax,%rdi
+    2cf7:	74 0d                	je     2d06 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev+0x2c>
+    2cf9:	48 8b 43 58          	mov    0x58(%rbx),%rax
+    2cfd:	48 8d 70 01          	lea    0x1(%rax),%rsi
+    2d01:	e8 3a f7 ff ff       	callq  2440 <_ZdlPvm@plt>
+    2d06:	48 8d 05 d3 3c 00 00 	lea    0x3cd3(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    2d0d:	48 89 03             	mov    %rax,(%rbx)
+    2d10:	48 8d 7b 38          	lea    0x38(%rbx),%rdi
+    2d14:	e8 b7 f7 ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    2d19:	be 68 00 00 00       	mov    $0x68,%esi
+    2d1e:	48 89 df             	mov    %rbx,%rdi
+    2d21:	e8 1a f7 ff ff       	callq  2440 <_ZdlPvm@plt>
+    2d26:	5b                   	pop    %rbx
+    2d27:	c3                   	retq   
+
+0000000000002d28 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_>:
+    2d28:	f3 0f 1e fa          	endbr64 
+    2d2c:	41 57                	push   %r15
+    2d2e:	41 56                	push   %r14
+    2d30:	41 55                	push   %r13
+    2d32:	41 54                	push   %r12
+    2d34:	55                   	push   %rbp
+    2d35:	53                   	push   %rbx
+    2d36:	48 83 ec 28          	sub    $0x28,%rsp
+    2d3a:	49 89 d5             	mov    %rdx,%r13
+    2d3d:	48 8b 6f 08          	mov    0x8(%rdi),%rbp
+    2d41:	4c 8b 3f             	mov    (%rdi),%r15
+    2d44:	48 89 e8             	mov    %rbp,%rax
+    2d47:	4c 29 f8             	sub    %r15,%rax
+    2d4a:	48 c1 f8 03          	sar    $0x3,%rax
+    2d4e:	48 ba ab aa aa aa aa 	movabs $0xaaaaaaaaaaaaaaab,%rdx
+    2d55:	aa aa aa 
+    2d58:	48 0f af c2          	imul   %rdx,%rax
+    2d5c:	48 ba 55 55 55 55 55 	movabs $0x555555555555555,%rdx
+    2d63:	55 55 05 
+    2d66:	48 39 d0             	cmp    %rdx,%rax
+    2d69:	74 4d                	je     2db8 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x90>
+    2d6b:	49 89 fc             	mov    %rdi,%r12
+    2d6e:	48 89 f3             	mov    %rsi,%rbx
+    2d71:	48 85 c0             	test   %rax,%rax
+    2d74:	ba 01 00 00 00       	mov    $0x1,%edx
+    2d79:	48 0f 45 d0          	cmovne %rax,%rdx
+    2d7d:	48 01 c2             	add    %rax,%rdx
+    2d80:	0f 82 ff 01 00 00    	jb     2f85 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x25d>
+    2d86:	48 b8 55 55 55 55 55 	movabs $0x555555555555555,%rax
+    2d8d:	55 55 05 
+    2d90:	48 39 c2             	cmp    %rax,%rdx
+    2d93:	48 0f 46 c2          	cmovbe %rdx,%rax
+    2d97:	48 89 44 24 10       	mov    %rax,0x10(%rsp)
+    2d9c:	49 89 f6             	mov    %rsi,%r14
+    2d9f:	4d 29 fe             	sub    %r15,%r14
+    2da2:	48 c7 04 24 00 00 00 	movq   $0x0,(%rsp)
+    2da9:	00 
+    2daa:	48 85 d2             	test   %rdx,%rdx
+    2dad:	0f 84 fd 01 00 00    	je     2fb0 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x288>
+    2db3:	e9 e2 01 00 00       	jmpq   2f9a <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x272>
+    2db8:	48 8d 3d 45 22 00 00 	lea    0x2245(%rip),%rdi        # 5004 <_IO_stdin_used+0x4>
+    2dbf:	e8 bc f5 ff ff       	callq  2380 <_ZSt20__throw_length_errorPKc@plt>
+    2dc4:	48 85 f6             	test   %rsi,%rsi
+    2dc7:	79 3d                	jns    2e06 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0xde>
+    2dc9:	e8 02 f6 ff ff       	callq  23d0 <_ZSt28__throw_bad_array_new_lengthv@plt>
+    2dce:	f3 0f 1e fa          	endbr64 
+    2dd2:	48 89 c7             	mov    %rax,%rdi
+    2dd5:	e8 96 f5 ff ff       	callq  2370 <__cxa_begin_catch@plt>
+    2dda:	48 83 3c 24 00       	cmpq   $0x0,(%rsp)
+    2ddf:	0f 85 8c 01 00 00    	jne    2f71 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x249>
+    2de5:	4c 89 f7             	mov    %r14,%rdi
+    2de8:	e8 d1 fc ff ff       	callq  2abe <_ZNSt12_Vector_baseIjSaIjEED1Ev>
+    2ded:	e8 ee f6 ff ff       	callq  24e0 <__cxa_rethrow@plt>
+    2df2:	f3 0f 1e fa          	endbr64 
+    2df6:	48 89 c3             	mov    %rax,%rbx
+    2df9:	e8 22 f7 ff ff       	callq  2520 <__cxa_end_catch@plt>
+    2dfe:	48 89 df             	mov    %rbx,%rdi
+    2e01:	e8 4a f7 ff ff       	callq  2550 <_Unwind_Resume@plt>
+    2e06:	e8 55 f5 ff ff       	callq  2360 <_ZSt17__throw_bad_allocv@plt>
+    2e0b:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    2e10:	48 8b 7c 24 08       	mov    0x8(%rsp),%rdi
+    2e15:	49 89 3e             	mov    %rdi,(%r14)
+    2e18:	49 89 7e 08          	mov    %rdi,0x8(%r14)
+    2e1c:	48 8b 44 24 18       	mov    0x18(%rsp),%rax
+    2e21:	48 01 f8             	add    %rdi,%rax
+    2e24:	49 89 46 10          	mov    %rax,0x10(%r14)
+    2e28:	49 8b 45 08          	mov    0x8(%r13),%rax
+    2e2c:	49 8b 75 00          	mov    0x0(%r13),%rsi
+    2e30:	49 89 c5             	mov    %rax,%r13
+    2e33:	49 29 f5             	sub    %rsi,%r13
+    2e36:	48 39 f0             	cmp    %rsi,%rax
+    2e39:	74 08                	je     2e43 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x11b>
+    2e3b:	4c 89 ea             	mov    %r13,%rdx
+    2e3e:	e8 cd f6 ff ff       	callq  2510 <memmove@plt>
+    2e43:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+    2e48:	4c 01 e8             	add    %r13,%rax
+    2e4b:	49 89 46 08          	mov    %rax,0x8(%r14)
+    2e4f:	4c 39 fb             	cmp    %r15,%rbx
+    2e52:	0f 84 10 01 00 00    	je     2f68 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x240>
+    2e58:	4c 89 f8             	mov    %r15,%rax
+    2e5b:	48 8b 14 24          	mov    (%rsp),%rdx
+    2e5f:	48 8b 08             	mov    (%rax),%rcx
+    2e62:	48 89 0a             	mov    %rcx,(%rdx)
+    2e65:	48 8b 48 08          	mov    0x8(%rax),%rcx
+    2e69:	48 89 4a 08          	mov    %rcx,0x8(%rdx)
+    2e6d:	48 8b 48 10          	mov    0x10(%rax),%rcx
+    2e71:	48 89 4a 10          	mov    %rcx,0x10(%rdx)
+    2e75:	48 83 c0 18          	add    $0x18,%rax
+    2e79:	48 83 c2 18          	add    $0x18,%rdx
+    2e7d:	48 39 c3             	cmp    %rax,%rbx
+    2e80:	75 dd                	jne    2e5f <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x137>
+    2e82:	48 8d 43 e8          	lea    -0x18(%rbx),%rax
+    2e86:	4c 29 f8             	sub    %r15,%rax
+    2e89:	48 c1 e8 03          	shr    $0x3,%rax
+    2e8d:	48 ba ab aa aa aa aa 	movabs $0xaaaaaaaaaaaaaab,%rdx
+    2e94:	aa aa 0a 
+    2e97:	48 0f af c2          	imul   %rdx,%rax
+    2e9b:	48 ba ff ff ff ff ff 	movabs $0x1fffffffffffffff,%rdx
+    2ea2:	ff ff 1f 
+    2ea5:	48 21 d0             	and    %rdx,%rax
+    2ea8:	48 8d 44 40 03       	lea    0x3(%rax,%rax,2),%rax
+    2ead:	48 8b 34 24          	mov    (%rsp),%rsi
+    2eb1:	4c 8d 2c c6          	lea    (%rsi,%rax,8),%r13
+    2eb5:	49 83 c5 18          	add    $0x18,%r13
+    2eb9:	48 39 eb             	cmp    %rbp,%rbx
+    2ebc:	74 59                	je     2f17 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x1ef>
+    2ebe:	48 89 d8             	mov    %rbx,%rax
+    2ec1:	4c 89 ea             	mov    %r13,%rdx
+    2ec4:	48 8b 08             	mov    (%rax),%rcx
+    2ec7:	48 89 0a             	mov    %rcx,(%rdx)
+    2eca:	48 8b 48 08          	mov    0x8(%rax),%rcx
+    2ece:	48 89 4a 08          	mov    %rcx,0x8(%rdx)
+    2ed2:	48 8b 48 10          	mov    0x10(%rax),%rcx
+    2ed6:	48 89 4a 10          	mov    %rcx,0x10(%rdx)
+    2eda:	48 83 c0 18          	add    $0x18,%rax
+    2ede:	48 83 c2 18          	add    $0x18,%rdx
+    2ee2:	48 39 c5             	cmp    %rax,%rbp
+    2ee5:	75 dd                	jne    2ec4 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x19c>
+    2ee7:	48 29 dd             	sub    %rbx,%rbp
+    2eea:	48 8d 45 e8          	lea    -0x18(%rbp),%rax
+    2eee:	48 c1 e8 03          	shr    $0x3,%rax
+    2ef2:	48 ba ab aa aa aa aa 	movabs $0xaaaaaaaaaaaaaab,%rdx
+    2ef9:	aa aa 0a 
+    2efc:	48 0f af c2          	imul   %rdx,%rax
+    2f00:	48 ba ff ff ff ff ff 	movabs $0x1fffffffffffffff,%rdx
+    2f07:	ff ff 1f 
+    2f0a:	48 21 d0             	and    %rdx,%rax
+    2f0d:	48 8d 44 40 03       	lea    0x3(%rax,%rax,2),%rax
+    2f12:	4d 8d 6c c5 00       	lea    0x0(%r13,%rax,8),%r13
+    2f17:	4d 85 ff             	test   %r15,%r15
+    2f1a:	74 10                	je     2f2c <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x204>
+    2f1c:	49 8b 74 24 10       	mov    0x10(%r12),%rsi
+    2f21:	4c 29 fe             	sub    %r15,%rsi
+    2f24:	4c 89 ff             	mov    %r15,%rdi
+    2f27:	e8 14 f5 ff ff       	callq  2440 <_ZdlPvm@plt>
+    2f2c:	48 8b 34 24          	mov    (%rsp),%rsi
+    2f30:	49 89 34 24          	mov    %rsi,(%r12)
+    2f34:	4d 89 6c 24 08       	mov    %r13,0x8(%r12)
+    2f39:	48 8b 44 24 10       	mov    0x10(%rsp),%rax
+    2f3e:	48 8d 04 40          	lea    (%rax,%rax,2),%rax
+    2f42:	48 8d 04 c6          	lea    (%rsi,%rax,8),%rax
+    2f46:	49 89 44 24 10       	mov    %rax,0x10(%r12)
+    2f4b:	48 83 c4 28          	add    $0x28,%rsp
+    2f4f:	5b                   	pop    %rbx
+    2f50:	5d                   	pop    %rbp
+    2f51:	41 5c                	pop    %r12
+    2f53:	41 5d                	pop    %r13
+    2f55:	41 5e                	pop    %r14
+    2f57:	41 5f                	pop    %r15
+    2f59:	c3                   	retq   
+    2f5a:	48 c7 44 24 08 00 00 	movq   $0x0,0x8(%rsp)
+    2f61:	00 00 
+    2f63:	e9 a8 fe ff ff       	jmpq   2e10 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0xe8>
+    2f68:	4c 8b 2c 24          	mov    (%rsp),%r13
+    2f6c:	e9 44 ff ff ff       	jmpq   2eb5 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x18d>
+    2f71:	48 6b 74 24 10 18    	imul   $0x18,0x10(%rsp),%rsi
+    2f77:	48 8b 3c 24          	mov    (%rsp),%rdi
+    2f7b:	e8 c0 f4 ff ff       	callq  2440 <_ZdlPvm@plt>
+    2f80:	e9 68 fe ff ff       	jmpq   2ded <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0xc5>
+    2f85:	49 89 f6             	mov    %rsi,%r14
+    2f88:	4d 29 fe             	sub    %r15,%r14
+    2f8b:	48 b8 55 55 55 55 55 	movabs $0x555555555555555,%rax
+    2f92:	55 55 05 
+    2f95:	48 89 44 24 10       	mov    %rax,0x10(%rsp)
+    2f9a:	48 8b 44 24 10       	mov    0x10(%rsp),%rax
+    2f9f:	48 8d 3c 40          	lea    (%rax,%rax,2),%rdi
+    2fa3:	48 c1 e7 03          	shl    $0x3,%rdi
+    2fa7:	e8 84 f4 ff ff       	callq  2430 <_Znwm@plt>
+    2fac:	48 89 04 24          	mov    %rax,(%rsp)
+    2fb0:	4c 03 34 24          	add    (%rsp),%r14
+    2fb4:	49 8b 45 08          	mov    0x8(%r13),%rax
+    2fb8:	49 c7 06 00 00 00 00 	movq   $0x0,(%r14)
+    2fbf:	49 c7 46 08 00 00 00 	movq   $0x0,0x8(%r14)
+    2fc6:	00 
+    2fc7:	49 c7 46 10 00 00 00 	movq   $0x0,0x10(%r14)
+    2fce:	00 
+    2fcf:	49 2b 45 00          	sub    0x0(%r13),%rax
+    2fd3:	48 89 c6             	mov    %rax,%rsi
+    2fd6:	48 89 44 24 18       	mov    %rax,0x18(%rsp)
+    2fdb:	0f 84 79 ff ff ff    	je     2f5a <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x232>
+    2fe1:	48 b8 fc ff ff ff ff 	movabs $0x7ffffffffffffffc,%rax
+    2fe8:	ff ff 7f 
+    2feb:	48 39 c6             	cmp    %rax,%rsi
+    2fee:	0f 87 d0 fd ff ff    	ja     2dc4 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0x9c>
+    2ff4:	48 8b 7c 24 18       	mov    0x18(%rsp),%rdi
+    2ff9:	e8 32 f4 ff ff       	callq  2430 <_Znwm@plt>
+    2ffe:	e9 08 fe ff ff       	jmpq   2e0b <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_+0xe3>
+    3003:	90                   	nop
+
+0000000000003004 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag>:
+    3004:	f3 0f 1e fa          	endbr64 
+    3008:	41 54                	push   %r12
+    300a:	55                   	push   %rbp
+    300b:	53                   	push   %rbx
+    300c:	48 83 ec 10          	sub    $0x10,%rsp
+    3010:	48 89 fd             	mov    %rdi,%rbp
+    3013:	49 89 f4             	mov    %rsi,%r12
+    3016:	48 89 d3             	mov    %rdx,%rbx
+    3019:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    3020:	00 00 
+    3022:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    3027:	31 c0                	xor    %eax,%eax
+    3029:	48 39 d6             	cmp    %rdx,%rsi
+    302c:	74 05                	je     3033 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0x2f>
+    302e:	48 85 f6             	test   %rsi,%rsi
+    3031:	74 47                	je     307a <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0x76>
+    3033:	4c 29 e3             	sub    %r12,%rbx
+    3036:	48 89 1c 24          	mov    %rbx,(%rsp)
+    303a:	48 83 fb 0f          	cmp    $0xf,%rbx
+    303e:	77 46                	ja     3086 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0x82>
+    3040:	48 8b 7d 00          	mov    0x0(%rbp),%rdi
+    3044:	48 83 fb 01          	cmp    $0x1,%rbx
+    3048:	75 68                	jne    30b2 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0xae>
+    304a:	41 0f b6 04 24       	movzbl (%r12),%eax
+    304f:	88 07                	mov    %al,(%rdi)
+    3051:	48 8b 04 24          	mov    (%rsp),%rax
+    3055:	48 89 45 08          	mov    %rax,0x8(%rbp)
+    3059:	48 8b 55 00          	mov    0x0(%rbp),%rdx
+    305d:	c6 04 02 00          	movb   $0x0,(%rdx,%rax,1)
+    3061:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+    3066:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    306d:	00 00 
+    306f:	75 48                	jne    30b9 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0xb5>
+    3071:	48 83 c4 10          	add    $0x10,%rsp
+    3075:	5b                   	pop    %rbx
+    3076:	5d                   	pop    %rbp
+    3077:	41 5c                	pop    %r12
+    3079:	c3                   	retq   
+    307a:	48 8d 3d 9f 1f 00 00 	lea    0x1f9f(%rip),%rdi        # 5020 <_IO_stdin_used+0x20>
+    3081:	e8 2a f3 ff ff       	callq  23b0 <_ZSt19__throw_logic_errorPKc@plt>
+    3086:	48 89 e6             	mov    %rsp,%rsi
+    3089:	ba 00 00 00 00       	mov    $0x0,%edx
+    308e:	48 89 ef             	mov    %rbp,%rdi
+    3091:	e8 ca f4 ff ff       	callq  2560 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm@plt>
+    3096:	48 89 c7             	mov    %rax,%rdi
+    3099:	48 89 45 00          	mov    %rax,0x0(%rbp)
+    309d:	48 8b 04 24          	mov    (%rsp),%rax
+    30a1:	48 89 45 10          	mov    %rax,0x10(%rbp)
+    30a5:	48 89 da             	mov    %rbx,%rdx
+    30a8:	4c 89 e6             	mov    %r12,%rsi
+    30ab:	e8 30 f3 ff ff       	callq  23e0 <memcpy@plt>
+    30b0:	eb 9f                	jmp    3051 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0x4d>
+    30b2:	48 85 db             	test   %rbx,%rbx
+    30b5:	74 9a                	je     3051 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0x4d>
+    30b7:	eb ec                	jmp    30a5 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag+0xa1>
+    30b9:	e8 a2 f3 ff ff       	callq  2460 <__stack_chk_fail@plt>
+
+00000000000030be <_Z10getline_asIjEiRSiRT_>:
+    30be:	f3 0f 1e fa          	endbr64 
+    30c2:	41 57                	push   %r15
+    30c4:	41 56                	push   %r14
+    30c6:	41 55                	push   %r13
+    30c8:	41 54                	push   %r12
+    30ca:	55                   	push   %rbp
+    30cb:	53                   	push   %rbx
+    30cc:	48 81 ec b8 01 00 00 	sub    $0x1b8,%rsp
+    30d3:	48 89 f3             	mov    %rsi,%rbx
+    30d6:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    30dd:	00 00 
+    30df:	48 89 84 24 a8 01 00 	mov    %rax,0x1a8(%rsp)
+    30e6:	00 
+    30e7:	31 c0                	xor    %eax,%eax
+    30e9:	48 89 e6             	mov    %rsp,%rsi
+    30ec:	48 8d 44 24 10       	lea    0x10(%rsp),%rax
+    30f1:	48 89 04 24          	mov    %rax,(%rsp)
+    30f5:	48 c7 44 24 08 00 00 	movq   $0x0,0x8(%rsp)
+    30fc:	00 00 
+    30fe:	c6 44 24 10 00       	movb   $0x0,0x10(%rsp)
+    3103:	e8 81 f5 ff ff       	callq  2689 <_Z10getline_asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEiRSiRT_>
+    3108:	89 c5                	mov    %eax,%ebp
+    310a:	85 c0                	test   %eax,%eax
+    310c:	75 47                	jne    3155 <_Z10getline_asIjEiRSiRT_+0x97>
+    310e:	48 8b 3c 24          	mov    (%rsp),%rdi
+    3112:	48 8d 44 24 10       	lea    0x10(%rsp),%rax
+    3117:	48 39 c7             	cmp    %rax,%rdi
+    311a:	74 0e                	je     312a <_Z10getline_asIjEiRSiRT_+0x6c>
+    311c:	48 8b 44 24 10       	mov    0x10(%rsp),%rax
+    3121:	48 8d 70 01          	lea    0x1(%rax),%rsi
+    3125:	e8 16 f3 ff ff       	callq  2440 <_ZdlPvm@plt>
+    312a:	48 8b 84 24 a8 01 00 	mov    0x1a8(%rsp),%rax
+    3131:	00 
+    3132:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    3139:	00 00 
+    313b:	0f 85 9e 03 00 00    	jne    34df <_Z10getline_asIjEiRSiRT_+0x421>
+    3141:	89 e8                	mov    %ebp,%eax
+    3143:	48 81 c4 b8 01 00 00 	add    $0x1b8,%rsp
+    314a:	5b                   	pop    %rbx
+    314b:	5d                   	pop    %rbp
+    314c:	41 5c                	pop    %r12
+    314e:	41 5d                	pop    %r13
+    3150:	41 5e                	pop    %r14
+    3152:	41 5f                	pop    %r15
+    3154:	c3                   	retq   
+    3155:	4c 8d 64 24 20       	lea    0x20(%rsp),%r12
+    315a:	48 8d bc 24 a0 00 00 	lea    0xa0(%rsp),%rdi
+    3161:	00 
+    3162:	e8 d9 f1 ff ff       	callq  2340 <_ZNSt8ios_baseC2Ev@plt>
+    3167:	48 8d 05 02 38 00 00 	lea    0x3802(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    316e:	48 89 84 24 a0 00 00 	mov    %rax,0xa0(%rsp)
+    3175:	00 
+    3176:	48 c7 84 24 78 01 00 	movq   $0x0,0x178(%rsp)
+    317d:	00 00 00 00 00 
+    3182:	c6 84 24 80 01 00 00 	movb   $0x0,0x180(%rsp)
+    3189:	00 
+    318a:	c6 84 24 81 01 00 00 	movb   $0x0,0x181(%rsp)
+    3191:	00 
+    3192:	48 c7 84 24 88 01 00 	movq   $0x0,0x188(%rsp)
+    3199:	00 00 00 00 00 
+    319e:	48 c7 84 24 90 01 00 	movq   $0x0,0x190(%rsp)
+    31a5:	00 00 00 00 00 
+    31aa:	48 c7 84 24 98 01 00 	movq   $0x0,0x198(%rsp)
+    31b1:	00 00 00 00 00 
+    31b6:	48 c7 84 24 a0 01 00 	movq   $0x0,0x1a0(%rsp)
+    31bd:	00 00 00 00 00 
+    31c2:	48 8b 2d c7 37 00 00 	mov    0x37c7(%rip),%rbp        # 6990 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    31c9:	48 89 6c 24 20       	mov    %rbp,0x20(%rsp)
+    31ce:	4c 8b 35 c3 37 00 00 	mov    0x37c3(%rip),%r14        # 6998 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x18>
+    31d5:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    31d9:	4c 89 74 04 20       	mov    %r14,0x20(%rsp,%rax,1)
+    31de:	48 c7 44 24 28 00 00 	movq   $0x0,0x28(%rsp)
+    31e5:	00 00 
+    31e7:	48 8b 44 24 20       	mov    0x20(%rsp),%rax
+    31ec:	4c 89 e7             	mov    %r12,%rdi
+    31ef:	48 03 78 e8          	add    -0x18(%rax),%rdi
+    31f3:	be 00 00 00 00       	mov    $0x0,%esi
+    31f8:	e8 c3 f2 ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    31fd:	4c 8b 25 9c 37 00 00 	mov    0x379c(%rip),%r12        # 69a0 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x20>
+    3204:	4c 89 64 24 30       	mov    %r12,0x30(%rsp)
+    3209:	49 8b 44 24 e8       	mov    -0x18(%r12),%rax
+    320e:	48 8b 0d 93 37 00 00 	mov    0x3793(%rip),%rcx        # 69a8 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x28>
+    3215:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    321a:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+    321f:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3223:	48 8d 7c 04 30       	lea    0x30(%rsp,%rax,1),%rdi
+    3228:	be 00 00 00 00       	mov    $0x0,%esi
+    322d:	e8 8e f2 ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    3232:	4c 8b 2d 4f 37 00 00 	mov    0x374f(%rip),%r13        # 6988 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x8>
+    3239:	4c 89 6c 24 20       	mov    %r13,0x20(%rsp)
+    323e:	4c 8b 3d 6b 37 00 00 	mov    0x376b(%rip),%r15        # 69b0 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x30>
+    3245:	49 8b 45 e8          	mov    -0x18(%r13),%rax
+    3249:	4c 89 7c 04 20       	mov    %r15,0x20(%rsp,%rax,1)
+    324e:	48 8d 05 63 38 00 00 	lea    0x3863(%rip),%rax        # 6ab8 <_ZTVNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x18>
+    3255:	48 89 44 24 20       	mov    %rax,0x20(%rsp)
+    325a:	48 8d 40 50          	lea    0x50(%rax),%rax
+    325e:	48 89 84 24 a0 00 00 	mov    %rax,0xa0(%rsp)
+    3265:	00 
+    3266:	48 8d 40 d8          	lea    -0x28(%rax),%rax
+    326a:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    326f:	48 8d 05 6a 37 00 00 	lea    0x376a(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3276:	48 89 44 24 38       	mov    %rax,0x38(%rsp)
+    327b:	48 c7 44 24 40 00 00 	movq   $0x0,0x40(%rsp)
+    3282:	00 00 
+    3284:	48 c7 44 24 48 00 00 	movq   $0x0,0x48(%rsp)
+    328b:	00 00 
+    328d:	48 c7 44 24 50 00 00 	movq   $0x0,0x50(%rsp)
+    3294:	00 00 
+    3296:	48 c7 44 24 58 00 00 	movq   $0x0,0x58(%rsp)
+    329d:	00 00 
+    329f:	48 c7 44 24 60 00 00 	movq   $0x0,0x60(%rsp)
+    32a6:	00 00 
+    32a8:	48 c7 44 24 68 00 00 	movq   $0x0,0x68(%rsp)
+    32af:	00 00 
+    32b1:	48 8d 7c 24 70       	lea    0x70(%rsp),%rdi
+    32b6:	e8 d5 f2 ff ff       	callq  2590 <_ZNSt6localeC1Ev@plt>
+    32bb:	48 8d 05 06 39 00 00 	lea    0x3906(%rip),%rax        # 6bc8 <_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    32c2:	48 89 44 24 38       	mov    %rax,0x38(%rsp)
+    32c7:	c7 44 24 78 00 00 00 	movl   $0x0,0x78(%rsp)
+    32ce:	00 
+    32cf:	48 8b 34 24          	mov    (%rsp),%rsi
+    32d3:	48 8d 84 24 90 00 00 	lea    0x90(%rsp),%rax
+    32da:	00 
+    32db:	48 89 84 24 80 00 00 	mov    %rax,0x80(%rsp)
+    32e2:	00 
+    32e3:	48 89 f2             	mov    %rsi,%rdx
+    32e6:	48 03 54 24 08       	add    0x8(%rsp),%rdx
+    32eb:	48 8d bc 24 80 00 00 	lea    0x80(%rsp),%rdi
+    32f2:	00 
+    32f3:	e8 0c fd ff ff       	callq  3004 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag>
+    32f8:	eb 4a                	jmp    3344 <_Z10getline_asIjEiRSiRT_+0x286>
+    32fa:	f3 0f 1e fa          	endbr64 
+    32fe:	48 89 c3             	mov    %rax,%rbx
+    3301:	48 89 6c 24 20       	mov    %rbp,0x20(%rsp)
+    3306:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    330a:	4c 89 74 04 20       	mov    %r14,0x20(%rsp,%rax,1)
+    330f:	48 c7 44 24 28 00 00 	movq   $0x0,0x28(%rsp)
+    3316:	00 00 
+    3318:	48 8d 05 51 36 00 00 	lea    0x3651(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    331f:	48 89 84 24 a0 00 00 	mov    %rax,0xa0(%rsp)
+    3326:	00 
+    3327:	48 8d bc 24 a0 00 00 	lea    0xa0(%rsp),%rdi
+    332e:	00 
+    332f:	e8 1c f0 ff ff       	callq  2350 <_ZNSt8ios_baseD2Ev@plt>
+    3334:	48 89 e7             	mov    %rsp,%rdi
+    3337:	e8 54 f1 ff ff       	callq  2490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+    333c:	48 89 df             	mov    %rbx,%rdi
+    333f:	e8 0c f2 ff ff       	callq  2550 <_Unwind_Resume@plt>
+    3344:	c7 44 24 78 18 00 00 	movl   $0x18,0x78(%rsp)
+    334b:	00 
+    334c:	48 8d 7c 24 38       	lea    0x38(%rsp),%rdi
+    3351:	b9 00 00 00 00       	mov    $0x0,%ecx
+    3356:	ba 00 00 00 00       	mov    $0x0,%edx
+    335b:	48 8b b4 24 80 00 00 	mov    0x80(%rsp),%rsi
+    3362:	00 
+    3363:	e8 48 f1 ff ff       	callq  24b0 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcmm@plt>
+    3368:	eb 49                	jmp    33b3 <_Z10getline_asIjEiRSiRT_+0x2f5>
+    336a:	f3 0f 1e fa          	endbr64 
+    336e:	48 89 c3             	mov    %rax,%rbx
+    3371:	48 8d bc 24 80 00 00 	lea    0x80(%rsp),%rdi
+    3378:	00 
+    3379:	e8 12 f1 ff ff       	callq  2490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+    337e:	48 8d 05 5b 36 00 00 	lea    0x365b(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3385:	48 89 44 24 38       	mov    %rax,0x38(%rsp)
+    338a:	48 8d 7c 24 70       	lea    0x70(%rsp),%rdi
+    338f:	e8 3c f1 ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    3394:	48 8d 7c 24 20       	lea    0x20(%rsp),%rdi
+    3399:	48 8d 35 e8 35 00 00 	lea    0x35e8(%rip),%rsi        # 6988 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x8>
+    33a0:	e8 6b ef ff ff       	callq  2310 <_ZNSdD2Ev@plt>
+    33a5:	e9 6e ff ff ff       	jmpq   3318 <_Z10getline_asIjEiRSiRT_+0x25a>
+    33aa:	f3 0f 1e fa          	endbr64 
+    33ae:	48 89 c3             	mov    %rax,%rbx
+    33b1:	eb cb                	jmp    337e <_Z10getline_asIjEiRSiRT_+0x2c0>
+    33b3:	48 8d 74 24 38       	lea    0x38(%rsp),%rsi
+    33b8:	48 8d bc 24 a0 00 00 	lea    0xa0(%rsp),%rdi
+    33bf:	00 
+    33c0:	e8 fb f0 ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    33c5:	eb 1f                	jmp    33e6 <_Z10getline_asIjEiRSiRT_+0x328>
+    33c7:	f3 0f 1e fa          	endbr64 
+    33cb:	48 89 c3             	mov    %rax,%rbx
+    33ce:	48 8d 7c 24 38       	lea    0x38(%rsp),%rdi
+    33d3:	e8 c0 f8 ff ff       	callq  2c98 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev>
+    33d8:	eb ba                	jmp    3394 <_Z10getline_asIjEiRSiRT_+0x2d6>
+    33da:	f3 0f 1e fa          	endbr64 
+    33de:	48 89 c3             	mov    %rax,%rbx
+    33e1:	e9 32 ff ff ff       	jmpq   3318 <_Z10getline_asIjEiRSiRT_+0x25a>
+    33e6:	48 8d 7c 24 20       	lea    0x20(%rsp),%rdi
+    33eb:	48 89 de             	mov    %rbx,%rsi
+    33ee:	e8 4d f1 ff ff       	callq  2540 <_ZNSi10_M_extractIjEERSiRT_@plt>
+    33f3:	48 8d 05 be 36 00 00 	lea    0x36be(%rip),%rax        # 6ab8 <_ZTVNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x18>
+    33fa:	48 89 44 24 20       	mov    %rax,0x20(%rsp)
+    33ff:	48 8d 40 50          	lea    0x50(%rax),%rax
+    3403:	48 89 84 24 a0 00 00 	mov    %rax,0xa0(%rsp)
+    340a:	00 
+    340b:	48 8d 40 d8          	lea    -0x28(%rax),%rax
+    340f:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3414:	48 8d 05 ad 37 00 00 	lea    0x37ad(%rip),%rax        # 6bc8 <_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    341b:	48 89 44 24 38       	mov    %rax,0x38(%rsp)
+    3420:	48 8b bc 24 80 00 00 	mov    0x80(%rsp),%rdi
+    3427:	00 
+    3428:	48 8d 84 24 90 00 00 	lea    0x90(%rsp),%rax
+    342f:	00 
+    3430:	48 39 c7             	cmp    %rax,%rdi
+    3433:	74 11                	je     3446 <_Z10getline_asIjEiRSiRT_+0x388>
+    3435:	48 8b 84 24 90 00 00 	mov    0x90(%rsp),%rax
+    343c:	00 
+    343d:	48 8d 70 01          	lea    0x1(%rax),%rsi
+    3441:	e8 fa ef ff ff       	callq  2440 <_ZdlPvm@plt>
+    3446:	48 8d 05 93 35 00 00 	lea    0x3593(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    344d:	48 89 44 24 38       	mov    %rax,0x38(%rsp)
+    3452:	48 8d 7c 24 70       	lea    0x70(%rsp),%rdi
+    3457:	e8 74 f0 ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    345c:	4c 89 6c 24 20       	mov    %r13,0x20(%rsp)
+    3461:	49 8b 45 e8          	mov    -0x18(%r13),%rax
+    3465:	4c 89 7c 04 20       	mov    %r15,0x20(%rsp,%rax,1)
+    346a:	4c 89 64 24 30       	mov    %r12,0x30(%rsp)
+    346f:	49 8b 44 24 e8       	mov    -0x18(%r12),%rax
+    3474:	48 8b 0d 2d 35 00 00 	mov    0x352d(%rip),%rcx        # 69a8 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x28>
+    347b:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    3480:	48 89 6c 24 20       	mov    %rbp,0x20(%rsp)
+    3485:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+    3489:	4c 89 74 04 20       	mov    %r14,0x20(%rsp,%rax,1)
+    348e:	48 c7 44 24 28 00 00 	movq   $0x0,0x28(%rsp)
+    3495:	00 00 
+    3497:	48 8d 05 d2 34 00 00 	lea    0x34d2(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    349e:	48 89 84 24 a0 00 00 	mov    %rax,0xa0(%rsp)
+    34a5:	00 
+    34a6:	48 8d bc 24 a0 00 00 	lea    0xa0(%rsp),%rdi
+    34ad:	00 
+    34ae:	e8 9d ee ff ff       	callq  2350 <_ZNSt8ios_baseD2Ev@plt>
+    34b3:	bd 01 00 00 00       	mov    $0x1,%ebp
+    34b8:	e9 51 fc ff ff       	jmpq   310e <_Z10getline_asIjEiRSiRT_+0x50>
+    34bd:	f3 0f 1e fa          	endbr64 
+    34c1:	48 89 c3             	mov    %rax,%rbx
+    34c4:	48 8d 7c 24 20       	lea    0x20(%rsp),%rdi
+    34c9:	e8 f2 ee ff ff       	callq  23c0 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>
+    34ce:	e9 61 fe ff ff       	jmpq   3334 <_Z10getline_asIjEiRSiRT_+0x276>
+    34d3:	f3 0f 1e fa          	endbr64 
+    34d7:	48 89 c3             	mov    %rax,%rbx
+    34da:	e9 55 fe ff ff       	jmpq   3334 <_Z10getline_asIjEiRSiRT_+0x276>
+    34df:	e8 7c ef ff ff       	callq  2460 <__stack_chk_fail@plt>
+
+00000000000034e4 <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_>:
+    34e4:	f3 0f 1e fa          	endbr64 
+    34e8:	41 57                	push   %r15
+    34ea:	41 56                	push   %r14
+    34ec:	41 55                	push   %r13
+    34ee:	41 54                	push   %r12
+    34f0:	55                   	push   %rbp
+    34f1:	53                   	push   %rbx
+    34f2:	48 83 ec 18          	sub    $0x18,%rsp
+    34f6:	48 89 34 24          	mov    %rsi,(%rsp)
+    34fa:	48 89 54 24 08       	mov    %rdx,0x8(%rsp)
+    34ff:	4c 8b 67 08          	mov    0x8(%rdi),%r12
+    3503:	4c 8b 2f             	mov    (%rdi),%r13
+    3506:	4c 89 e2             	mov    %r12,%rdx
+    3509:	4c 29 ea             	sub    %r13,%rdx
+    350c:	48 c1 fa 02          	sar    $0x2,%rdx
+    3510:	48 b8 ff ff ff ff ff 	movabs $0x1fffffffffffffff,%rax
+    3517:	ff ff 1f 
+    351a:	48 39 c2             	cmp    %rax,%rdx
+    351d:	74 38                	je     3557 <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0x73>
+    351f:	48 89 fb             	mov    %rdi,%rbx
+    3522:	48 85 d2             	test   %rdx,%rdx
+    3525:	b8 01 00 00 00       	mov    $0x1,%eax
+    352a:	48 0f 45 c2          	cmovne %rdx,%rax
+    352e:	48 01 d0             	add    %rdx,%rax
+    3531:	72 58                	jb     358b <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0xa7>
+    3533:	49 be ff ff ff ff ff 	movabs $0x1fffffffffffffff,%r14
+    353a:	ff ff 1f 
+    353d:	4c 39 f0             	cmp    %r14,%rax
+    3540:	4c 0f 46 f0          	cmovbe %rax,%r14
+    3544:	4c 8b 3c 24          	mov    (%rsp),%r15
+    3548:	4d 29 ef             	sub    %r13,%r15
+    354b:	bd 00 00 00 00       	mov    $0x0,%ebp
+    3550:	48 85 c0             	test   %rax,%rax
+    3553:	74 57                	je     35ac <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0xc8>
+    3555:	eb 45                	jmp    359c <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0xb8>
+    3557:	48 8d 3d a6 1a 00 00 	lea    0x1aa6(%rip),%rdi        # 5004 <_IO_stdin_used+0x4>
+    355e:	e8 1d ee ff ff       	callq  2380 <_ZSt20__throw_length_errorPKc@plt>
+    3563:	4c 89 fa             	mov    %r15,%rdx
+    3566:	4c 89 ee             	mov    %r13,%rsi
+    3569:	48 89 ef             	mov    %rbp,%rdi
+    356c:	e8 9f ef ff ff       	callq  2510 <memmove@plt>
+    3571:	4e 8d 7c 3d 04       	lea    0x4(%rbp,%r15,1),%r15
+    3576:	4c 2b 24 24          	sub    (%rsp),%r12
+    357a:	4d 85 e4             	test   %r12,%r12
+    357d:	7f 4c                	jg     35cb <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0xe7>
+    357f:	4d 01 e7             	add    %r12,%r15
+    3582:	48 8b 73 10          	mov    0x10(%rbx),%rsi
+    3586:	4c 29 ee             	sub    %r13,%rsi
+    3589:	eb 5e                	jmp    35e9 <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0x105>
+    358b:	4c 8b 3c 24          	mov    (%rsp),%r15
+    358f:	4d 29 ef             	sub    %r13,%r15
+    3592:	49 be ff ff ff ff ff 	movabs $0x1fffffffffffffff,%r14
+    3599:	ff ff 1f 
+    359c:	4a 8d 3c b5 00 00 00 	lea    0x0(,%r14,4),%rdi
+    35a3:	00 
+    35a4:	e8 87 ee ff ff       	callq  2430 <_Znwm@plt>
+    35a9:	48 89 c5             	mov    %rax,%rbp
+    35ac:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+    35b1:	8b 00                	mov    (%rax),%eax
+    35b3:	42 89 44 3d 00       	mov    %eax,0x0(%rbp,%r15,1)
+    35b8:	4d 85 ff             	test   %r15,%r15
+    35bb:	7f a6                	jg     3563 <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0x7f>
+    35bd:	4e 8d 7c 3d 04       	lea    0x4(%rbp,%r15,1),%r15
+    35c2:	4c 2b 24 24          	sub    (%rsp),%r12
+    35c6:	4d 85 e4             	test   %r12,%r12
+    35c9:	7e 0f                	jle    35da <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0xf6>
+    35cb:	4c 89 e2             	mov    %r12,%rdx
+    35ce:	48 8b 34 24          	mov    (%rsp),%rsi
+    35d2:	4c 89 ff             	mov    %r15,%rdi
+    35d5:	e8 06 ee ff ff       	callq  23e0 <memcpy@plt>
+    35da:	4d 01 e7             	add    %r12,%r15
+    35dd:	4d 85 ed             	test   %r13,%r13
+    35e0:	74 0f                	je     35f1 <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_+0x10d>
+    35e2:	48 8b 73 10          	mov    0x10(%rbx),%rsi
+    35e6:	4c 29 ee             	sub    %r13,%rsi
+    35e9:	4c 89 ef             	mov    %r13,%rdi
+    35ec:	e8 4f ee ff ff       	callq  2440 <_ZdlPvm@plt>
+    35f1:	48 89 2b             	mov    %rbp,(%rbx)
+    35f4:	4c 89 7b 08          	mov    %r15,0x8(%rbx)
+    35f8:	4a 8d 44 b5 00       	lea    0x0(%rbp,%r14,4),%rax
+    35fd:	48 89 43 10          	mov    %rax,0x10(%rbx)
+    3601:	48 83 c4 18          	add    $0x18,%rsp
+    3605:	5b                   	pop    %rbx
+    3606:	5d                   	pop    %rbp
+    3607:	41 5c                	pop    %r12
+    3609:	41 5d                	pop    %r13
+    360b:	41 5e                	pop    %r14
+    360d:	41 5f                	pop    %r15
+    360f:	c3                   	retq   
+
+0000000000003610 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE>:
+    3610:	f3 0f 1e fa          	endbr64 
+    3614:	41 57                	push   %r15
+    3616:	41 56                	push   %r14
+    3618:	41 55                	push   %r13
+    361a:	41 54                	push   %r12
+    361c:	55                   	push   %rbp
+    361d:	53                   	push   %rbx
+    361e:	48 81 ec c8 01 00 00 	sub    $0x1c8,%rsp
+    3625:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    362c:	00 00 
+    362e:	48 89 84 24 b8 01 00 	mov    %rax,0x1b8(%rsp)
+    3635:	00 
+    3636:	31 c0                	xor    %eax,%eax
+    3638:	48 8d 44 24 20       	lea    0x20(%rsp),%rax
+    363d:	48 89 44 24 10       	mov    %rax,0x10(%rsp)
+    3642:	48 c7 44 24 18 00 00 	movq   $0x0,0x18(%rsp)
+    3649:	00 00 
+    364b:	c6 44 24 20 00       	movb   $0x0,0x20(%rsp)
+    3650:	48 8b 07             	mov    (%rdi),%rax
+    3653:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3657:	4c 8b a4 07 f0 00 00 	mov    0xf0(%rdi,%rax,1),%r12
+    365e:	00 
+    365f:	4d 85 e4             	test   %r12,%r12
+    3662:	74 26                	je     368a <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x7a>
+    3664:	48 89 fd             	mov    %rdi,%rbp
+    3667:	48 89 f3             	mov    %rsi,%rbx
+    366a:	41 80 7c 24 38 00    	cmpb   $0x0,0x38(%r12)
+    3670:	74 29                	je     369b <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x8b>
+    3672:	41 0f b6 54 24 43    	movzbl 0x43(%r12),%edx
+    3678:	0f be d2             	movsbl %dl,%edx
+    367b:	48 8d 74 24 10       	lea    0x10(%rsp),%rsi
+    3680:	48 89 ef             	mov    %rbp,%rdi
+    3683:	e8 e8 ee ff ff       	callq  2570 <_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_@plt>
+    3688:	eb 2c                	jmp    36b6 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0xa6>
+    368a:	e8 11 ee ff ff       	callq  24a0 <_ZSt16__throw_bad_castv@plt>
+    368f:	f3 0f 1e fa          	endbr64 
+    3693:	48 89 c3             	mov    %rax,%rbx
+    3696:	e9 5d 02 00 00       	jmpq   38f8 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x2e8>
+    369b:	4c 89 e7             	mov    %r12,%rdi
+    369e:	e8 dd ed ff ff       	callq  2480 <_ZNKSt5ctypeIcE13_M_widen_initEv@plt>
+    36a3:	49 8b 04 24          	mov    (%r12),%rax
+    36a7:	be 0a 00 00 00       	mov    $0xa,%esi
+    36ac:	4c 89 e7             	mov    %r12,%rdi
+    36af:	ff 50 30             	callq  *0x30(%rax)
+    36b2:	89 c2                	mov    %eax,%edx
+    36b4:	eb c2                	jmp    3678 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x68>
+    36b6:	48 8b 10             	mov    (%rax),%rdx
+    36b9:	48 8b 52 e8          	mov    -0x18(%rdx),%rdx
+    36bd:	bd 00 00 00 00       	mov    $0x0,%ebp
+    36c2:	f6 44 10 20 05       	testb  $0x5,0x20(%rax,%rdx,1)
+    36c7:	74 48                	je     3711 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x101>
+    36c9:	48 8b 7c 24 10       	mov    0x10(%rsp),%rdi
+    36ce:	48 8d 44 24 20       	lea    0x20(%rsp),%rax
+    36d3:	48 39 c7             	cmp    %rax,%rdi
+    36d6:	74 0e                	je     36e6 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0xd6>
+    36d8:	48 8b 44 24 20       	mov    0x20(%rsp),%rax
+    36dd:	48 8d 70 01          	lea    0x1(%rax),%rsi
+    36e1:	e8 5a ed ff ff       	callq  2440 <_ZdlPvm@plt>
+    36e6:	48 8b 84 24 b8 01 00 	mov    0x1b8(%rsp),%rax
+    36ed:	00 
+    36ee:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    36f5:	00 00 
+    36f7:	0f 85 d9 03 00 00    	jne    3ad6 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x4c6>
+    36fd:	89 e8                	mov    %ebp,%eax
+    36ff:	48 81 c4 c8 01 00 00 	add    $0x1c8,%rsp
+    3706:	5b                   	pop    %rbx
+    3707:	5d                   	pop    %rbp
+    3708:	41 5c                	pop    %r12
+    370a:	41 5d                	pop    %r13
+    370c:	41 5e                	pop    %r14
+    370e:	41 5f                	pop    %r15
+    3710:	c3                   	retq   
+    3711:	48 8d 6c 24 30       	lea    0x30(%rsp),%rbp
+    3716:	48 8d bc 24 b0 00 00 	lea    0xb0(%rsp),%rdi
+    371d:	00 
+    371e:	e8 1d ec ff ff       	callq  2340 <_ZNSt8ios_baseC2Ev@plt>
+    3723:	48 8d 05 46 32 00 00 	lea    0x3246(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    372a:	48 89 84 24 b0 00 00 	mov    %rax,0xb0(%rsp)
+    3731:	00 
+    3732:	48 c7 84 24 88 01 00 	movq   $0x0,0x188(%rsp)
+    3739:	00 00 00 00 00 
+    373e:	c6 84 24 90 01 00 00 	movb   $0x0,0x190(%rsp)
+    3745:	00 
+    3746:	c6 84 24 91 01 00 00 	movb   $0x0,0x191(%rsp)
+    374d:	00 
+    374e:	48 c7 84 24 98 01 00 	movq   $0x0,0x198(%rsp)
+    3755:	00 00 00 00 00 
+    375a:	48 c7 84 24 a0 01 00 	movq   $0x0,0x1a0(%rsp)
+    3761:	00 00 00 00 00 
+    3766:	48 c7 84 24 a8 01 00 	movq   $0x0,0x1a8(%rsp)
+    376d:	00 00 00 00 00 
+    3772:	48 c7 84 24 b0 01 00 	movq   $0x0,0x1b0(%rsp)
+    3779:	00 00 00 00 00 
+    377e:	4c 8b 25 0b 32 00 00 	mov    0x320b(%rip),%r12        # 6990 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    3785:	4c 89 64 24 30       	mov    %r12,0x30(%rsp)
+    378a:	4c 8b 3d 07 32 00 00 	mov    0x3207(%rip),%r15        # 6998 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x18>
+    3791:	49 8b 44 24 e8       	mov    -0x18(%r12),%rax
+    3796:	4c 89 7c 04 30       	mov    %r15,0x30(%rsp,%rax,1)
+    379b:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    37a2:	00 00 
+    37a4:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+    37a9:	48 89 ef             	mov    %rbp,%rdi
+    37ac:	48 03 78 e8          	add    -0x18(%rax),%rdi
+    37b0:	be 00 00 00 00       	mov    $0x0,%esi
+    37b5:	e8 06 ed ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    37ba:	4c 8b 2d df 31 00 00 	mov    0x31df(%rip),%r13        # 69a0 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x20>
+    37c1:	4c 89 6c 24 40       	mov    %r13,0x40(%rsp)
+    37c6:	49 8b 45 e8          	mov    -0x18(%r13),%rax
+    37ca:	48 8b 0d d7 31 00 00 	mov    0x31d7(%rip),%rcx        # 69a8 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x28>
+    37d1:	48 89 4c 04 40       	mov    %rcx,0x40(%rsp,%rax,1)
+    37d6:	48 8b 44 24 40       	mov    0x40(%rsp),%rax
+    37db:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    37df:	48 8d 7c 04 40       	lea    0x40(%rsp,%rax,1),%rdi
+    37e4:	be 00 00 00 00       	mov    $0x0,%esi
+    37e9:	e8 d2 ec ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    37ee:	4c 8b 35 93 31 00 00 	mov    0x3193(%rip),%r14        # 6988 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x8>
+    37f5:	4c 89 74 24 30       	mov    %r14,0x30(%rsp)
+    37fa:	49 8b 46 e8          	mov    -0x18(%r14),%rax
+    37fe:	48 8b 0d ab 31 00 00 	mov    0x31ab(%rip),%rcx        # 69b0 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x30>
+    3805:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    380a:	48 8d 05 a7 32 00 00 	lea    0x32a7(%rip),%rax        # 6ab8 <_ZTVNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x18>
+    3811:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3816:	48 8d 40 50          	lea    0x50(%rax),%rax
+    381a:	48 89 84 24 b0 00 00 	mov    %rax,0xb0(%rsp)
+    3821:	00 
+    3822:	48 8d 40 d8          	lea    -0x28(%rax),%rax
+    3826:	48 89 44 24 40       	mov    %rax,0x40(%rsp)
+    382b:	48 8d 05 ae 31 00 00 	lea    0x31ae(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3832:	48 89 44 24 48       	mov    %rax,0x48(%rsp)
+    3837:	48 c7 44 24 50 00 00 	movq   $0x0,0x50(%rsp)
+    383e:	00 00 
+    3840:	48 c7 44 24 58 00 00 	movq   $0x0,0x58(%rsp)
+    3847:	00 00 
+    3849:	48 c7 44 24 60 00 00 	movq   $0x0,0x60(%rsp)
+    3850:	00 00 
+    3852:	48 c7 44 24 68 00 00 	movq   $0x0,0x68(%rsp)
+    3859:	00 00 
+    385b:	48 c7 44 24 70 00 00 	movq   $0x0,0x70(%rsp)
+    3862:	00 00 
+    3864:	48 c7 44 24 78 00 00 	movq   $0x0,0x78(%rsp)
+    386b:	00 00 
+    386d:	48 8d bc 24 80 00 00 	lea    0x80(%rsp),%rdi
+    3874:	00 
+    3875:	e8 16 ed ff ff       	callq  2590 <_ZNSt6localeC1Ev@plt>
+    387a:	48 8d 05 47 33 00 00 	lea    0x3347(%rip),%rax        # 6bc8 <_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    3881:	48 89 44 24 48       	mov    %rax,0x48(%rsp)
+    3886:	c7 84 24 88 00 00 00 	movl   $0x0,0x88(%rsp)
+    388d:	00 00 00 00 
+    3891:	48 8b 74 24 10       	mov    0x10(%rsp),%rsi
+    3896:	48 8d 84 24 a0 00 00 	lea    0xa0(%rsp),%rax
+    389d:	00 
+    389e:	48 89 84 24 90 00 00 	mov    %rax,0x90(%rsp)
+    38a5:	00 
+    38a6:	48 89 f2             	mov    %rsi,%rdx
+    38a9:	48 03 54 24 18       	add    0x18(%rsp),%rdx
+    38ae:	48 8d bc 24 90 00 00 	lea    0x90(%rsp),%rdi
+    38b5:	00 
+    38b6:	e8 49 f7 ff ff       	callq  3004 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag>
+    38bb:	eb 4d                	jmp    390a <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x2fa>
+    38bd:	f3 0f 1e fa          	endbr64 
+    38c1:	48 89 c3             	mov    %rax,%rbx
+    38c4:	4c 89 64 24 30       	mov    %r12,0x30(%rsp)
+    38c9:	49 8b 44 24 e8       	mov    -0x18(%r12),%rax
+    38ce:	4c 89 7c 04 30       	mov    %r15,0x30(%rsp,%rax,1)
+    38d3:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    38da:	00 00 
+    38dc:	48 8d 05 8d 30 00 00 	lea    0x308d(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    38e3:	48 89 84 24 b0 00 00 	mov    %rax,0xb0(%rsp)
+    38ea:	00 
+    38eb:	48 8d bc 24 b0 00 00 	lea    0xb0(%rsp),%rdi
+    38f2:	00 
+    38f3:	e8 58 ea ff ff       	callq  2350 <_ZNSt8ios_baseD2Ev@plt>
+    38f8:	48 8d 7c 24 10       	lea    0x10(%rsp),%rdi
+    38fd:	e8 8e eb ff ff       	callq  2490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+    3902:	48 89 df             	mov    %rbx,%rdi
+    3905:	e8 46 ec ff ff       	callq  2550 <_Unwind_Resume@plt>
+    390a:	c7 84 24 88 00 00 00 	movl   $0x18,0x88(%rsp)
+    3911:	18 00 00 00 
+    3915:	48 8d 7c 24 48       	lea    0x48(%rsp),%rdi
+    391a:	b9 00 00 00 00       	mov    $0x0,%ecx
+    391f:	ba 00 00 00 00       	mov    $0x0,%edx
+    3924:	48 8b b4 24 90 00 00 	mov    0x90(%rsp),%rsi
+    392b:	00 
+    392c:	e8 7f eb ff ff       	callq  24b0 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcmm@plt>
+    3931:	eb 4c                	jmp    397f <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x36f>
+    3933:	f3 0f 1e fa          	endbr64 
+    3937:	48 89 c3             	mov    %rax,%rbx
+    393a:	48 8d bc 24 90 00 00 	lea    0x90(%rsp),%rdi
+    3941:	00 
+    3942:	e8 49 eb ff ff       	callq  2490 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+    3947:	48 8d 05 92 30 00 00 	lea    0x3092(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    394e:	48 89 44 24 48       	mov    %rax,0x48(%rsp)
+    3953:	48 8d bc 24 80 00 00 	lea    0x80(%rsp),%rdi
+    395a:	00 
+    395b:	e8 70 eb ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    3960:	48 8d 7c 24 30       	lea    0x30(%rsp),%rdi
+    3965:	48 8d 35 1c 30 00 00 	lea    0x301c(%rip),%rsi        # 6988 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x8>
+    396c:	e8 9f e9 ff ff       	callq  2310 <_ZNSdD2Ev@plt>
+    3971:	e9 66 ff ff ff       	jmpq   38dc <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x2cc>
+    3976:	f3 0f 1e fa          	endbr64 
+    397a:	48 89 c3             	mov    %rax,%rbx
+    397d:	eb c8                	jmp    3947 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x337>
+    397f:	48 8d 74 24 48       	lea    0x48(%rsp),%rsi
+    3984:	48 8d bc 24 b0 00 00 	lea    0xb0(%rsp),%rdi
+    398b:	00 
+    398c:	e8 2f eb ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    3991:	48 8d 6c 24 0c       	lea    0xc(%rsp),%rbp
+    3996:	eb 45                	jmp    39dd <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x3cd>
+    3998:	f3 0f 1e fa          	endbr64 
+    399c:	48 89 c3             	mov    %rax,%rbx
+    399f:	48 8d 7c 24 48       	lea    0x48(%rsp),%rdi
+    39a4:	e8 ef f2 ff ff       	callq  2c98 <_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev>
+    39a9:	eb b5                	jmp    3960 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x350>
+    39ab:	f3 0f 1e fa          	endbr64 
+    39af:	48 89 c3             	mov    %rax,%rbx
+    39b2:	e9 25 ff ff ff       	jmpq   38dc <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x2cc>
+    39b7:	48 89 ea             	mov    %rbp,%rdx
+    39ba:	48 89 df             	mov    %rbx,%rdi
+    39bd:	e8 22 fb ff ff       	callq  34e4 <_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_>
+    39c2:	eb 19                	jmp    39dd <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x3cd>
+    39c4:	85 c0                	test   %eax,%eax
+    39c6:	74 24                	je     39ec <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x3dc>
+    39c8:	48 8b 73 08          	mov    0x8(%rbx),%rsi
+    39cc:	48 3b 73 10          	cmp    0x10(%rbx),%rsi
+    39d0:	74 e5                	je     39b7 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x3a7>
+    39d2:	8b 44 24 0c          	mov    0xc(%rsp),%eax
+    39d6:	89 06                	mov    %eax,(%rsi)
+    39d8:	48 83 43 08 04       	addq   $0x4,0x8(%rbx)
+    39dd:	48 8d 7c 24 30       	lea    0x30(%rsp),%rdi
+    39e2:	48 89 ee             	mov    %rbp,%rsi
+    39e5:	e8 d4 f6 ff ff       	callq  30be <_Z10getline_asIjEiRSiRT_>
+    39ea:	eb d8                	jmp    39c4 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x3b4>
+    39ec:	48 8d 05 c5 30 00 00 	lea    0x30c5(%rip),%rax        # 6ab8 <_ZTVNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x18>
+    39f3:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    39f8:	48 8d 40 50          	lea    0x50(%rax),%rax
+    39fc:	48 89 84 24 b0 00 00 	mov    %rax,0xb0(%rsp)
+    3a03:	00 
+    3a04:	48 8d 40 d8          	lea    -0x28(%rax),%rax
+    3a08:	48 89 44 24 40       	mov    %rax,0x40(%rsp)
+    3a0d:	48 8d 05 b4 31 00 00 	lea    0x31b4(%rip),%rax        # 6bc8 <_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x10>
+    3a14:	48 89 44 24 48       	mov    %rax,0x48(%rsp)
+    3a19:	48 8b bc 24 90 00 00 	mov    0x90(%rsp),%rdi
+    3a20:	00 
+    3a21:	48 8d 84 24 a0 00 00 	lea    0xa0(%rsp),%rax
+    3a28:	00 
+    3a29:	48 39 c7             	cmp    %rax,%rdi
+    3a2c:	74 11                	je     3a3f <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x42f>
+    3a2e:	48 8b 84 24 a0 00 00 	mov    0xa0(%rsp),%rax
+    3a35:	00 
+    3a36:	48 8d 70 01          	lea    0x1(%rax),%rsi
+    3a3a:	e8 01 ea ff ff       	callq  2440 <_ZdlPvm@plt>
+    3a3f:	48 8d 05 9a 2f 00 00 	lea    0x2f9a(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3a46:	48 89 44 24 48       	mov    %rax,0x48(%rsp)
+    3a4b:	48 8d bc 24 80 00 00 	lea    0x80(%rsp),%rdi
+    3a52:	00 
+    3a53:	e8 78 ea ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    3a58:	4c 89 74 24 30       	mov    %r14,0x30(%rsp)
+    3a5d:	49 8b 46 e8          	mov    -0x18(%r14),%rax
+    3a61:	48 8b 0d 48 2f 00 00 	mov    0x2f48(%rip),%rcx        # 69b0 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x30>
+    3a68:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    3a6d:	4c 89 6c 24 40       	mov    %r13,0x40(%rsp)
+    3a72:	49 8b 45 e8          	mov    -0x18(%r13),%rax
+    3a76:	48 8b 0d 2b 2f 00 00 	mov    0x2f2b(%rip),%rcx        # 69a8 <_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@@GLIBCXX_3.4.21+0x28>
+    3a7d:	48 89 4c 04 40       	mov    %rcx,0x40(%rsp,%rax,1)
+    3a82:	4c 89 64 24 30       	mov    %r12,0x30(%rsp)
+    3a87:	49 8b 44 24 e8       	mov    -0x18(%r12),%rax
+    3a8c:	4c 89 7c 04 30       	mov    %r15,0x30(%rsp,%rax,1)
+    3a91:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    3a98:	00 00 
+    3a9a:	48 8d 05 cf 2e 00 00 	lea    0x2ecf(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3aa1:	48 89 84 24 b0 00 00 	mov    %rax,0xb0(%rsp)
+    3aa8:	00 
+    3aa9:	48 8d bc 24 b0 00 00 	lea    0xb0(%rsp),%rdi
+    3ab0:	00 
+    3ab1:	e8 9a e8 ff ff       	callq  2350 <_ZNSt8ios_baseD2Ev@plt>
+    3ab6:	bd 01 00 00 00       	mov    $0x1,%ebp
+    3abb:	e9 09 fc ff ff       	jmpq   36c9 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0xb9>
+    3ac0:	f3 0f 1e fa          	endbr64 
+    3ac4:	48 89 c3             	mov    %rax,%rbx
+    3ac7:	48 8d 7c 24 30       	lea    0x30(%rsp),%rdi
+    3acc:	e8 ef e8 ff ff       	callq  23c0 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>
+    3ad1:	e9 22 fe ff ff       	jmpq   38f8 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE+0x2e8>
+    3ad6:	e8 85 e9 ff ff       	callq  2460 <__stack_chk_fail@plt>
+    3adb:	90                   	nop
+
+0000000000003adc <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE>:
+    3adc:	f3 0f 1e fa          	endbr64 
+    3ae0:	41 57                	push   %r15
+    3ae2:	41 56                	push   %r14
+    3ae4:	41 55                	push   %r13
+    3ae6:	41 54                	push   %r12
+    3ae8:	55                   	push   %rbp
+    3ae9:	53                   	push   %rbx
+    3aea:	48 81 ec 48 02 00 00 	sub    $0x248,%rsp
+    3af1:	49 89 fc             	mov    %rdi,%r12
+    3af4:	48 89 f3             	mov    %rsi,%rbx
+    3af7:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    3afe:	00 00 
+    3b00:	48 89 84 24 38 02 00 	mov    %rax,0x238(%rsp)
+    3b07:	00 
+    3b08:	31 c0                	xor    %eax,%eax
+    3b0a:	ba 11 00 00 00       	mov    $0x11,%edx
+    3b0f:	48 8d 35 34 15 00 00 	lea    0x1534(%rip),%rsi        # 504a <_IO_stdin_used+0x4a>
+    3b16:	48 8d 2d 23 35 00 00 	lea    0x3523(%rip),%rbp        # 7040 <_ZSt4cout@@GLIBCXX_3.4>
+    3b1d:	48 89 ef             	mov    %rbp,%rdi
+    3b20:	e8 4b e9 ff ff       	callq  2470 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+    3b25:	48 8b 53 08          	mov    0x8(%rbx),%rdx
+    3b29:	48 8b 33             	mov    (%rbx),%rsi
+    3b2c:	48 89 ef             	mov    %rbp,%rdi
+    3b2f:	e8 3c e9 ff ff       	callq  2470 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+    3b34:	48 89 c5             	mov    %rax,%rbp
+    3b37:	48 8b 00             	mov    (%rax),%rax
+    3b3a:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3b3e:	4c 8b ac 05 f0 00 00 	mov    0xf0(%rbp,%rax,1),%r13
+    3b45:	00 
+    3b46:	4d 85 ed             	test   %r13,%r13
+    3b49:	0f 84 ce 00 00 00    	je     3c1d <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x141>
+    3b4f:	41 80 7d 38 00       	cmpb   $0x0,0x38(%r13)
+    3b54:	0f 84 c8 00 00 00    	je     3c22 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x146>
+    3b5a:	41 0f b6 75 43       	movzbl 0x43(%r13),%esi
+    3b5f:	40 0f be f6          	movsbl %sil,%esi
+    3b63:	48 89 ef             	mov    %rbp,%rdi
+    3b66:	e8 85 e7 ff ff       	callq  22f0 <_ZNSo3putEc@plt>
+    3b6b:	48 89 c7             	mov    %rax,%rdi
+    3b6e:	e8 2d e8 ff ff       	callq  23a0 <_ZNSo5flushEv@plt>
+    3b73:	48 8d 6c 24 30       	lea    0x30(%rsp),%rbp
+    3b78:	48 8d bc 24 30 01 00 	lea    0x130(%rsp),%rdi
+    3b7f:	00 
+    3b80:	e8 bb e7 ff ff       	callq  2340 <_ZNSt8ios_baseC2Ev@plt>
+    3b85:	48 8d 05 e4 2d 00 00 	lea    0x2de4(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3b8c:	48 89 84 24 30 01 00 	mov    %rax,0x130(%rsp)
+    3b93:	00 
+    3b94:	48 c7 84 24 08 02 00 	movq   $0x0,0x208(%rsp)
+    3b9b:	00 00 00 00 00 
+    3ba0:	c6 84 24 10 02 00 00 	movb   $0x0,0x210(%rsp)
+    3ba7:	00 
+    3ba8:	c6 84 24 11 02 00 00 	movb   $0x0,0x211(%rsp)
+    3baf:	00 
+    3bb0:	48 c7 84 24 18 02 00 	movq   $0x0,0x218(%rsp)
+    3bb7:	00 00 00 00 00 
+    3bbc:	48 c7 84 24 20 02 00 	movq   $0x0,0x220(%rsp)
+    3bc3:	00 00 00 00 00 
+    3bc8:	48 c7 84 24 28 02 00 	movq   $0x0,0x228(%rsp)
+    3bcf:	00 00 00 00 00 
+    3bd4:	48 c7 84 24 30 02 00 	movq   $0x0,0x230(%rsp)
+    3bdb:	00 00 00 00 00 
+    3be0:	48 8b 05 b9 2f 00 00 	mov    0x2fb9(%rip),%rax        # 6ba0 <_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x8>
+    3be7:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3bec:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3bf0:	48 8b 0d b1 2f 00 00 	mov    0x2fb1(%rip),%rcx        # 6ba8 <_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3bf7:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    3bfc:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    3c03:	00 00 
+    3c05:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+    3c0a:	48 89 ef             	mov    %rbp,%rdi
+    3c0d:	48 03 78 e8          	add    -0x18(%rax),%rdi
+    3c11:	be 00 00 00 00       	mov    $0x0,%esi
+    3c16:	e8 a5 e8 ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    3c1b:	eb 23                	jmp    3c40 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x164>
+    3c1d:	e8 7e e8 ff ff       	callq  24a0 <_ZSt16__throw_bad_castv@plt>
+    3c22:	4c 89 ef             	mov    %r13,%rdi
+    3c25:	e8 56 e8 ff ff       	callq  2480 <_ZNKSt5ctypeIcE13_M_widen_initEv@plt>
+    3c2a:	49 8b 45 00          	mov    0x0(%r13),%rax
+    3c2e:	be 0a 00 00 00       	mov    $0xa,%esi
+    3c33:	4c 89 ef             	mov    %r13,%rdi
+    3c36:	ff 50 30             	callq  *0x30(%rax)
+    3c39:	89 c6                	mov    %eax,%esi
+    3c3b:	e9 1f ff ff ff       	jmpq   3b5f <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x83>
+    3c40:	48 8d 05 21 2e 00 00 	lea    0x2e21(%rip),%rax        # 6a68 <_ZTVSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x18>
+    3c47:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3c4c:	48 8d 40 28          	lea    0x28(%rax),%rax
+    3c50:	48 89 84 24 30 01 00 	mov    %rax,0x130(%rsp)
+    3c57:	00 
+    3c58:	48 8d 7c 24 40       	lea    0x40(%rsp),%rdi
+    3c5d:	e8 ee e7 ff ff       	callq  2450 <_ZNSt13basic_filebufIcSt11char_traitsIcEEC1Ev@plt>
+    3c62:	48 8d 74 24 40       	lea    0x40(%rsp),%rsi
+    3c67:	48 8d bc 24 30 01 00 	lea    0x130(%rsp),%rdi
+    3c6e:	00 
+    3c6f:	e8 4c e8 ff ff       	callq  24c0 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+    3c74:	48 8d 7c 24 40       	lea    0x40(%rsp),%rdi
+    3c79:	ba 08 00 00 00       	mov    $0x8,%edx
+    3c7e:	48 8b 33             	mov    (%rbx),%rsi
+    3c81:	e8 7a e7 ff ff       	callq  2400 <_ZNSt13basic_filebufIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode@plt>
+    3c86:	48 85 c0             	test   %rax,%rax
+    3c89:	74 1a                	je     3ca5 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1c9>
+    3c8b:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+    3c90:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3c94:	48 8d 7c 04 30       	lea    0x30(%rsp,%rax,1),%rdi
+    3c99:	be 00 00 00 00       	mov    $0x0,%esi
+    3c9e:	e8 8d e8 ff ff       	callq  2530 <_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate@plt>
+    3ca3:	eb 19                	jmp    3cbe <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1e2>
+    3ca5:	48 8b 44 24 30       	mov    0x30(%rsp),%rax
+    3caa:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3cae:	48 8d 7c 04 30       	lea    0x30(%rsp,%rax,1),%rdi
+    3cb3:	8b 77 20             	mov    0x20(%rdi),%esi
+    3cb6:	83 ce 04             	or     $0x4,%esi
+    3cb9:	e8 72 e8 ff ff       	callq  2530 <_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate@plt>
+    3cbe:	48 c7 44 24 10 00 00 	movq   $0x0,0x10(%rsp)
+    3cc5:	00 00 
+    3cc7:	48 c7 44 24 18 00 00 	movq   $0x0,0x18(%rsp)
+    3cce:	00 00 
+    3cd0:	48 c7 44 24 20 00 00 	movq   $0x0,0x20(%rsp)
+    3cd7:	00 00 
+    3cd9:	e9 f7 00 00 00       	jmpq   3dd5 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x2f9>
+    3cde:	f3 0f 1e fa          	endbr64 
+    3ce2:	48 89 c3             	mov    %rax,%rbx
+    3ce5:	48 8d 7c 24 40       	lea    0x40(%rsp),%rdi
+    3cea:	e8 11 e8 ff ff       	callq  2500 <_ZNSt13basic_filebufIcSt11char_traitsIcEED1Ev@plt>
+    3cef:	48 8b 05 aa 2e 00 00 	mov    0x2eaa(%rip),%rax        # 6ba0 <_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x8>
+    3cf6:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3cfb:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3cff:	48 8b 0d a2 2e 00 00 	mov    0x2ea2(%rip),%rcx        # 6ba8 <_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3d06:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    3d0b:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    3d12:	00 00 
+    3d14:	48 8d 05 55 2c 00 00 	lea    0x2c55(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3d1b:	48 89 84 24 30 01 00 	mov    %rax,0x130(%rsp)
+    3d22:	00 
+    3d23:	48 8d bc 24 30 01 00 	lea    0x130(%rsp),%rdi
+    3d2a:	00 
+    3d2b:	e8 20 e6 ff ff       	callq  2350 <_ZNSt8ios_baseD2Ev@plt>
+    3d30:	48 89 df             	mov    %rbx,%rdi
+    3d33:	e8 18 e8 ff ff       	callq  2550 <_Unwind_Resume@plt>
+    3d38:	f3 0f 1e fa          	endbr64 
+    3d3c:	48 89 c3             	mov    %rax,%rbx
+    3d3f:	eb ae                	jmp    3cef <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x213>
+    3d41:	f3 0f 1e fa          	endbr64 
+    3d45:	48 89 c3             	mov    %rax,%rbx
+    3d48:	eb ca                	jmp    3d14 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x238>
+    3d4a:	4d 85 f6             	test   %r14,%r14
+    3d4d:	79 28                	jns    3d77 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x29b>
+    3d4f:	e8 7c e6 ff ff       	callq  23d0 <_ZSt28__throw_bad_array_new_lengthv@plt>
+    3d54:	f3 0f 1e fa          	endbr64 
+    3d58:	48 89 c3             	mov    %rax,%rbx
+    3d5b:	48 8d 7c 24 10       	lea    0x10(%rsp),%rdi
+    3d60:	e8 59 ed ff ff       	callq  2abe <_ZNSt12_Vector_baseIjSaIjEED1Ev>
+    3d65:	48 8d 7c 24 30       	lea    0x30(%rsp),%rdi
+    3d6a:	e8 c1 e5 ff ff       	callq  2330 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev@plt>
+    3d6f:	48 89 df             	mov    %rbx,%rdi
+    3d72:	e8 d9 e7 ff ff       	callq  2550 <_Unwind_Resume@plt>
+    3d77:	e8 e4 e5 ff ff       	callq  2360 <_ZSt17__throw_bad_allocv@plt>
+    3d7c:	48 89 c7             	mov    %rax,%rdi
+    3d7f:	48 89 3b             	mov    %rdi,(%rbx)
+    3d82:	48 89 7b 08          	mov    %rdi,0x8(%rbx)
+    3d86:	4e 8d 3c 37          	lea    (%rdi,%r14,1),%r15
+    3d8a:	4c 89 7b 10          	mov    %r15,0x10(%rbx)
+    3d8e:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+    3d93:	49 39 c5             	cmp    %rax,%r13
+    3d96:	74 0b                	je     3da3 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x2c7>
+    3d98:	4c 89 f2             	mov    %r14,%rdx
+    3d9b:	48 89 c6             	mov    %rax,%rsi
+    3d9e:	e8 6d e7 ff ff       	callq  2510 <memmove@plt>
+    3da3:	4c 89 7b 08          	mov    %r15,0x8(%rbx)
+    3da7:	48 83 45 08 18       	addq   $0x18,0x8(%rbp)
+    3dac:	48 8b 4c 24 18       	mov    0x18(%rsp),%rcx
+    3db1:	48 8b 54 24 10       	mov    0x10(%rsp),%rdx
+    3db6:	48 89 c8             	mov    %rcx,%rax
+    3db9:	48 29 d0             	sub    %rdx,%rax
+    3dbc:	48 c1 f8 02          	sar    $0x2,%rax
+    3dc0:	49 89 44 24 08       	mov    %rax,0x8(%r12)
+    3dc5:	49 83 44 24 10 01    	addq   $0x1,0x10(%r12)
+    3dcb:	48 39 d1             	cmp    %rdx,%rcx
+    3dce:	74 05                	je     3dd5 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x2f9>
+    3dd0:	48 89 54 24 18       	mov    %rdx,0x18(%rsp)
+    3dd5:	48 8d 74 24 10       	lea    0x10(%rsp),%rsi
+    3dda:	48 8d 7c 24 30       	lea    0x30(%rsp),%rdi
+    3ddf:	e8 2c f8 ff ff       	callq  3610 <_Z21getNextLineAndSplitAsIjEiRSiRSt6vectorIT_SaIS2_EE>
+    3de4:	eb 19                	jmp    3dff <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x323>
+    3de6:	bf 00 00 00 00       	mov    $0x0,%edi
+    3deb:	eb 92                	jmp    3d7f <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x2a3>
+    3ded:	48 8d 54 24 10       	lea    0x10(%rsp),%rdx
+    3df2:	48 89 de             	mov    %rbx,%rsi
+    3df5:	48 89 ef             	mov    %rbp,%rdi
+    3df8:	e8 2b ef ff ff       	callq  2d28 <_ZNSt6vectorIS_IjSaIjEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_>
+    3dfd:	eb ad                	jmp    3dac <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x2d0>
+    3dff:	85 c0                	test   %eax,%eax
+    3e01:	74 5c                	je     3e5f <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x383>
+    3e03:	49 8b 2c 24          	mov    (%r12),%rbp
+    3e07:	48 8b 5d 08          	mov    0x8(%rbp),%rbx
+    3e0b:	48 3b 5d 10          	cmp    0x10(%rbp),%rbx
+    3e0f:	74 dc                	je     3ded <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x311>
+    3e11:	4c 8b 6c 24 18       	mov    0x18(%rsp),%r13
+    3e16:	48 8b 44 24 10       	mov    0x10(%rsp),%rax
+    3e1b:	48 89 44 24 08       	mov    %rax,0x8(%rsp)
+    3e20:	48 c7 03 00 00 00 00 	movq   $0x0,(%rbx)
+    3e27:	48 c7 43 08 00 00 00 	movq   $0x0,0x8(%rbx)
+    3e2e:	00 
+    3e2f:	48 c7 43 10 00 00 00 	movq   $0x0,0x10(%rbx)
+    3e36:	00 
+    3e37:	4d 89 ee             	mov    %r13,%r14
+    3e3a:	49 29 c6             	sub    %rax,%r14
+    3e3d:	74 a7                	je     3de6 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x30a>
+    3e3f:	48 b8 fc ff ff ff ff 	movabs $0x7ffffffffffffffc,%rax
+    3e46:	ff ff 7f 
+    3e49:	49 39 c6             	cmp    %rax,%r14
+    3e4c:	0f 87 f8 fe ff ff    	ja     3d4a <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x26e>
+    3e52:	4c 89 f7             	mov    %r14,%rdi
+    3e55:	e8 d6 e5 ff ff       	callq  2430 <_Znwm@plt>
+    3e5a:	e9 1d ff ff ff       	jmpq   3d7c <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x2a0>
+    3e5f:	ba 06 00 00 00       	mov    $0x6,%edx
+    3e64:	48 8d 35 f1 11 00 00 	lea    0x11f1(%rip),%rsi        # 505c <_IO_stdin_used+0x5c>
+    3e6b:	48 8d 3d ce 31 00 00 	lea    0x31ce(%rip),%rdi        # 7040 <_ZSt4cout@@GLIBCXX_3.4>
+    3e72:	e8 f9 e5 ff ff       	callq  2470 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+    3e77:	49 8b 74 24 10       	mov    0x10(%r12),%rsi
+    3e7c:	48 8d 3d bd 31 00 00 	lea    0x31bd(%rip),%rdi        # 7040 <_ZSt4cout@@GLIBCXX_3.4>
+    3e83:	e8 08 e5 ff ff       	callq  2390 <_ZNSo9_M_insertImEERSoT_@plt>
+    3e88:	48 89 c3             	mov    %rax,%rbx
+    3e8b:	ba 0a 00 00 00       	mov    $0xa,%edx
+    3e90:	48 8d 35 cc 11 00 00 	lea    0x11cc(%rip),%rsi        # 5063 <_IO_stdin_used+0x63>
+    3e97:	48 89 c7             	mov    %rax,%rdi
+    3e9a:	e8 d1 e5 ff ff       	callq  2470 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+    3e9f:	49 8b 74 24 08       	mov    0x8(%r12),%rsi
+    3ea4:	48 89 df             	mov    %rbx,%rdi
+    3ea7:	e8 e4 e4 ff ff       	callq  2390 <_ZNSo9_M_insertImEERSoT_@plt>
+    3eac:	48 89 c3             	mov    %rax,%rbx
+    3eaf:	48 8b 00             	mov    (%rax),%rax
+    3eb2:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3eb6:	48 8b ac 03 f0 00 00 	mov    0xf0(%rbx,%rax,1),%rbp
+    3ebd:	00 
+    3ebe:	48 85 ed             	test   %rbp,%rbp
+    3ec1:	74 18                	je     3edb <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x3ff>
+    3ec3:	80 7d 38 00          	cmpb   $0x0,0x38(%rbp)
+    3ec7:	74 17                	je     3ee0 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x404>
+    3ec9:	0f b6 75 43          	movzbl 0x43(%rbp),%esi
+    3ecd:	40 0f be f6          	movsbl %sil,%esi
+    3ed1:	48 89 df             	mov    %rbx,%rdi
+    3ed4:	e8 17 e4 ff ff       	callq  22f0 <_ZNSo3putEc@plt>
+    3ed9:	eb 20                	jmp    3efb <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x41f>
+    3edb:	e8 c0 e5 ff ff       	callq  24a0 <_ZSt16__throw_bad_castv@plt>
+    3ee0:	48 89 ef             	mov    %rbp,%rdi
+    3ee3:	e8 98 e5 ff ff       	callq  2480 <_ZNKSt5ctypeIcE13_M_widen_initEv@plt>
+    3ee8:	48 8b 45 00          	mov    0x0(%rbp),%rax
+    3eec:	be 0a 00 00 00       	mov    $0xa,%esi
+    3ef1:	48 89 ef             	mov    %rbp,%rdi
+    3ef4:	ff 50 30             	callq  *0x30(%rax)
+    3ef7:	89 c6                	mov    %eax,%esi
+    3ef9:	eb d2                	jmp    3ecd <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x3f1>
+    3efb:	48 89 c7             	mov    %rax,%rdi
+    3efe:	e8 9d e4 ff ff       	callq  23a0 <_ZNSo5flushEv@plt>
+    3f03:	48 8b 7c 24 10       	mov    0x10(%rsp),%rdi
+    3f08:	48 85 ff             	test   %rdi,%rdi
+    3f0b:	74 0d                	je     3f1a <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x43e>
+    3f0d:	48 8b 74 24 20       	mov    0x20(%rsp),%rsi
+    3f12:	48 29 fe             	sub    %rdi,%rsi
+    3f15:	e8 26 e5 ff ff       	callq  2440 <_ZdlPvm@plt>
+    3f1a:	48 8d 05 47 2b 00 00 	lea    0x2b47(%rip),%rax        # 6a68 <_ZTVSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x18>
+    3f21:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3f26:	48 8d 40 28          	lea    0x28(%rax),%rax
+    3f2a:	48 89 84 24 30 01 00 	mov    %rax,0x130(%rsp)
+    3f31:	00 
+    3f32:	48 8d 05 ef 2b 00 00 	lea    0x2bef(%rip),%rax        # 6b28 <_ZTVSt13basic_filebufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3f39:	48 89 44 24 40       	mov    %rax,0x40(%rsp)
+    3f3e:	48 8d 7c 24 40       	lea    0x40(%rsp),%rdi
+    3f43:	e8 d8 e3 ff ff       	callq  2320 <_ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv@plt>
+    3f48:	eb 11                	jmp    3f5b <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x47f>
+    3f4a:	f3 0f 1e fa          	endbr64 
+    3f4e:	48 89 c7             	mov    %rax,%rdi
+    3f51:	e8 1a e4 ff ff       	callq  2370 <__cxa_begin_catch@plt>
+    3f56:	e8 c5 e5 ff ff       	callq  2520 <__cxa_end_catch@plt>
+    3f5b:	48 8d bc 24 a8 00 00 	lea    0xa8(%rsp),%rdi
+    3f62:	00 
+    3f63:	e8 18 e6 ff ff       	callq  2580 <_ZNSt12__basic_fileIcED1Ev@plt>
+    3f68:	48 8d 05 71 2a 00 00 	lea    0x2a71(%rip),%rax        # 69e0 <_ZTVSt15basic_streambufIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3f6f:	48 89 44 24 40       	mov    %rax,0x40(%rsp)
+    3f74:	48 8d 7c 24 78       	lea    0x78(%rsp),%rdi
+    3f79:	e8 52 e5 ff ff       	callq  24d0 <_ZNSt6localeD1Ev@plt>
+    3f7e:	48 8b 05 1b 2c 00 00 	mov    0x2c1b(%rip),%rax        # 6ba0 <_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x8>
+    3f85:	48 89 44 24 30       	mov    %rax,0x30(%rsp)
+    3f8a:	48 8b 40 e8          	mov    -0x18(%rax),%rax
+    3f8e:	48 8b 0d 13 2c 00 00 	mov    0x2c13(%rip),%rcx        # 6ba8 <_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3f95:	48 89 4c 04 30       	mov    %rcx,0x30(%rsp,%rax,1)
+    3f9a:	48 c7 44 24 38 00 00 	movq   $0x0,0x38(%rsp)
+    3fa1:	00 00 
+    3fa3:	48 8d 05 c6 29 00 00 	lea    0x29c6(%rip),%rax        # 6970 <_ZTVSt9basic_iosIcSt11char_traitsIcEE@@GLIBCXX_3.4+0x10>
+    3faa:	48 89 84 24 30 01 00 	mov    %rax,0x130(%rsp)
+    3fb1:	00 
+    3fb2:	48 8d bc 24 30 01 00 	lea    0x130(%rsp),%rdi
+    3fb9:	00 
+    3fba:	e8 91 e3 ff ff       	callq  2350 <_ZNSt8ios_baseD2Ev@plt>
+    3fbf:	48 8b 84 24 38 02 00 	mov    0x238(%rsp),%rax
+    3fc6:	00 
+    3fc7:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    3fce:	00 00 
+    3fd0:	75 12                	jne    3fe4 <_ZN9DataTableIjE7fromCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x508>
+    3fd2:	48 81 c4 48 02 00 00 	add    $0x248,%rsp
+    3fd9:	5b                   	pop    %rbx
+    3fda:	5d                   	pop    %rbp
+    3fdb:	41 5c                	pop    %r12
+    3fdd:	41 5d                	pop    %r13
+    3fdf:	41 5e                	pop    %r14
+    3fe1:	41 5f                	pop    %r15
+    3fe3:	c3                   	retq   
+    3fe4:	e8 77 e4 ff ff       	callq  2460 <__stack_chk_fail@plt>
+    3fe9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000003ff0 <__libc_csu_init>:
+    3ff0:	f3 0f 1e fa          	endbr64 
+    3ff4:	41 57                	push   %r15
+    3ff6:	4c 8d 3d 4b 29 00 00 	lea    0x294b(%rip),%r15        # 6948 <__frame_dummy_init_array_entry>
+    3ffd:	41 56                	push   %r14
+    3fff:	49 89 d6             	mov    %rdx,%r14
+    4002:	41 55                	push   %r13
+    4004:	49 89 f5             	mov    %rsi,%r13
+    4007:	41 54                	push   %r12
+    4009:	41 89 fc             	mov    %edi,%r12d
+    400c:	55                   	push   %rbp
+    400d:	48 8d 2d 44 29 00 00 	lea    0x2944(%rip),%rbp        # 6958 <__do_global_dtors_aux_fini_array_entry>
+    4014:	53                   	push   %rbx
+    4015:	4c 29 fd             	sub    %r15,%rbp
+    4018:	48 83 ec 08          	sub    $0x8,%rsp
+    401c:	e8 df df ff ff       	callq  2000 <_init>
+    4021:	48 c1 fd 03          	sar    $0x3,%rbp
+    4025:	74 1f                	je     4046 <__libc_csu_init+0x56>
+    4027:	31 db                	xor    %ebx,%ebx
+    4029:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+    4030:	4c 89 f2             	mov    %r14,%rdx
+    4033:	4c 89 ee             	mov    %r13,%rsi
+    4036:	44 89 e7             	mov    %r12d,%edi
+    4039:	41 ff 14 df          	callq  *(%r15,%rbx,8)
+    403d:	48 83 c3 01          	add    $0x1,%rbx
+    4041:	48 39 dd             	cmp    %rbx,%rbp
+    4044:	75 ea                	jne    4030 <__libc_csu_init+0x40>
+    4046:	48 83 c4 08          	add    $0x8,%rsp
+    404a:	5b                   	pop    %rbx
+    404b:	5d                   	pop    %rbp
+    404c:	41 5c                	pop    %r12
+    404e:	41 5d                	pop    %r13
+    4050:	41 5e                	pop    %r14
+    4052:	41 5f                	pop    %r15
+    4054:	c3                   	retq   
+    4055:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+    405c:	00 00 00 00 
+
+0000000000004060 <__libc_csu_fini>:
+    4060:	f3 0f 1e fa          	endbr64 
+    4064:	c3                   	retq   
+
+Disassembly of section .fini:
+
+0000000000004068 <_fini>:
+    4068:	f3 0f 1e fa          	endbr64 
+    406c:	48 83 ec 08          	sub    $0x8,%rsp
+    4070:	48 83 c4 08          	add    $0x8,%rsp
+    4074:	c3                   	retq   
