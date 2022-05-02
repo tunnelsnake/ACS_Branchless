@@ -8,14 +8,14 @@
 template <typename T> class DataTable {
 public:
   DataTable() {
-    _table = new std::vector<std::vector<T>>();
+    table = new std::vector<std::vector<T>>();
     _width = 0;
     _height = 0;
   }
   ~DataTable() {}
 
   void clear() {
-    _table->clear();
+    table->clear();
     _width = 0;
     _height = 0;
   }
@@ -27,7 +27,7 @@ public:
 
     unsigned long rowIndex = 0;
     while (getNextLineAndSplitAs<T>(f, s)) {
-      _table->push_back(s);
+      table->push_back(s);
       _width = s.size();
       _height += 1;
       s.clear();
@@ -51,7 +51,7 @@ public:
 
     // Iterate over the table and print its constituents (conditionally surround
     // with quotes if string or char)
-    for (auto row : *_table) {
+    for (auto row : *table) {
       for (auto col : row) {
         std::cout << (isStringType ? "\"" : "") << col
                   << (isStringType ? "\"" : "") << ", ";
@@ -64,7 +64,7 @@ public:
   // data table. It takes a single function pointer to a fn that returns bool
   // and is passed <T>.
   void map(bool (*func)(T *)) {
-    for (auto row : *_table) {
+    for (auto row : *table) {
       for (auto col : row) {
         func(&col);
         // std::cout << func(col) << std::endl;
@@ -81,15 +81,15 @@ public:
 #pragma omp for collapse(2)
       for (int row = 0; row < _height; row++) {
         for (int col = 0; col < _width; col++) {
-          func(&(_table->at(row).at(col)));
-          // std::cout << func(_table->at(row).at(col)) << std::endl;
+          func(&(table->at(row).at(col)));
+          // std::cout << func(table->at(row).at(col)) << std::endl;
         }
       }
     }
   }
 
   void mapInPlace(T& (*func)(T &)) {
-    for (auto row : *_table) {
+    for (auto row : *table) {
       for (auto col : row) {
         func(col);
       }
@@ -99,7 +99,7 @@ public:
   void mapInPlace2(T& (*func)(T &)) {
     for (int i = 0; i < _height; i++) {
       for (int j = 0; j < _width; j++) {
-        func(_table->at(i).at(j));
+        func(table->at(i).at(j));
       }
     }
   }
@@ -108,7 +108,7 @@ public:
   // run a function on them.
   void mapRows(std::vector<bool> (*func)(std::vector<T> &)) {
     for (int row = 0; row < _height; row++) {
-      func(_table->at(row));
+      func(table->at(row));
     }
   }
 
@@ -119,13 +119,14 @@ public:
     {
 #pragma omp for
       for (int row = 0; row < _height; row++) {
-        func(_table->at(row));
+        func(table->at(row));
       }
     }
   }
 
+  std::vector<std::vector<T>> *table;
+
 private:
-  std::vector<std::vector<T>> *_table;
   unsigned long _width;
   unsigned long _height;
 };

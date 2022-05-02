@@ -26,11 +26,55 @@ Included for convenience below is a control flow diagram generated from the asse
 Branchless programming is the study of constructing creative solutions to pieces of code that otherwise would require branches to compute.  The main technique for doing so is to remove branches and replace them with their 'branchless' variants.  One such example would be the x86 instruction group SETcc.  This group of instructions looks at the ZFLAGS register and if the comparison meets the SETcc instruction's parameters, then a given register will be set with a 1, else a zero.
 
 
-
-# Data Generation
+## Data Generation
 ```python3 generate_test_data.py```
 Make sure you have the right sizes needed to run the tests. 10 x 2, 1000 x 1000, 5000 x 5000 (in unsigned int only).
 
-# Compilation
+## Flag Analysis
 
-```g++ datatable_test.cpp -fopenmp```
+GCC has a plethora of optimization flags that already optimize away simple branches if it recognizes them [GCC Optimization](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html). In order to prevent our results from being overwritten we checked all of the flags on optimization level 1 and compared them against no optimization to see whihc changed the main function in ```basic_comp.cpp``` which strips as much overhead as possible.
+
+The results are as follows in terms of differences:
+
+```
+O0:fauto-inc-dec diffs              - 0
+O0:fcprop-registers diffs           - 0
+O0:fdc diffs                        - 0
+O0:fdefer-pop diffs                 - 0
+O0:fdelayed-branch diffs            - 0
+O0:fds diffs                        - 0
+O0:fguess-branch-probability diffs  - 0
+O0:fif-conversion2 diffs            - 0
+O0:fif-conversion diffs             - 0
+O0:finline-small-functions diffs    - 0
+O0:fipa-pure-const diffs            - 336
+O0:fipa-reference diffs             - 0
+O0:fmerge-constan diffs             - 0
+O0:fsplit-wide-types diffs          - 0
+O0:ftree-ccp diffs                  - 0
+O0:ftree-ch diffs                   - 0
+O0:ftree-copyrena diffs             - 0
+O0:ftree-dc diffs                   - 0
+O0:ftree-dominator-opts diffs       - 0
+O0:ftree-dse diffs                  - 0
+O0:ftree-fre diffs                  - 0
+O0:ftree-sra diffs                  - 0
+O0:ftree-ter diffs                  - 214
+O0:funit-at-a-time diffs            - 0
+O0:O0 diffs                         - 0
+O0:O1 diffs                         - 593
+O0:O2 diffs                         - 589
+O0:O3 diffs                         - 786
+```
+
+That is why the compiler command is so lengthy in this case.
+
+### Results
+
+Because the file is small with limited overhead most flags do not affect main at all. The ones that do are fipa-pure-const which finds which functions are pure or const. This likely reduced other functions calls in main such as chrono calls in the assembly. The ftree-ter on the other hand performs expression replacement. This is why it sees the conditionals on lines 29 and 32 and reduces them into a single compare operator.
+
+For those readers that want to do assembly analysis all assembly is dumped into ```optimization_flags```. The results can be rerun with ```test_optimizations.sh```
+
+## Compilation
+
+```g++ datatable_test.cpp -fopenmp -fauto-inc-dec -fcprop-registers -fdce -fdefer-pop -fdelayed-branch -fdse -fguess-branch-probability -fif-conversion2 -fif-conversion -finline-small-functions -fipa-reference -fmerge-constants -fsplit-wide-types -ftree-ccp -ftree-ch -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-fre -ftree-sra -funit-at-a-time```
